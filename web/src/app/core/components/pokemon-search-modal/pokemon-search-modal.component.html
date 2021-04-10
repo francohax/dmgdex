@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="quick-info-display">
+        <img class="pokemon-info-image" src="https://img.pokemondb.net/sprites/x-y/normal/{{displayMon.name}}.png" alt="{{displayMon.name}}">
+    </div>
+    <div>Search Bar</div>
+    <div class="search-result-list">
+        <div class="pokemon-node" *ngFor="let value of pokemon" (mouseover)="setDisplayMon(value)">
+            <img class="pokemon-node-img" src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/{{value.name}}.png" alt="{{value.name}}">
+            <div style="text-transform: capitalize;">{{value.name}}</div>
+        </div>
+    </div>
+</div>

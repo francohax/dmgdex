@@ -1,0 +1,60 @@
+:host 
+    font-size: 0.6rem
+    color: white
+
+$primary: #53087A
+$bg: #2A1A39
+$image-box-size: 3rem
+
+.container
+    display: flex
+    flex-direction: column
+
+    max-width: 50%
+    margin-left: 10%
+
+    background-color: $bg
+    border-radius: 2px
+    padding: 1rem
+
+.search-result-list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-end
+
+
+.pokemon-node
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    background-color: $primary
+    border-radius: 2px
+    margin: 1px 1px
+
+    cursor: pointer
+    transition: all 0.2s ease-in-out
+
+    &:hover
+       color: rgba(255, 255, 255, 1)
+       box-shadow: 0 5px 15px #5ac4df66 
+
+.pokemon-node-img
+    height: $image-box-size
+    width: $image-box-size
+
+
+
+.quick-info-display
+    display: flex
+    align-items: center
+
+    background-color: $primary
+    padding: 5px
+
+.pokemon-info-image
+    background-color: $bg
+    border-radius: 100%
+    height: 5rem
