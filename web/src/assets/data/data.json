@@ -1,9 +1,9 @@
 {
     "pokemon": [
         {
-            "number": 1,
+            "id": 1,
             "name": "bulbasaur",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -13,7 +13,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 45,
                 "attack": 49,
                 "defense": 49,
@@ -347,9 +347,9 @@
             ]
         },
         {
-            "number": 2,
+            "id": 2,
             "name": "ivysaur",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -359,7 +359,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 62,
                 "defense": 63,
@@ -645,9 +645,9 @@
             ]
         },
         {
-            "number": 3,
+            "id": 3,
             "name": "venusaur",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -657,7 +657,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 82,
                 "defense": 83,
@@ -987,15 +987,15 @@
             ]
         },
         {
-            "number": 4,
+            "id": 4,
             "name": "charmander",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 39,
                 "attack": 52,
                 "defense": 43,
@@ -1389,15 +1389,15 @@
             ]
         },
         {
-            "number": 5,
+            "id": 5,
             "name": "charmeleon",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 58,
                 "attack": 64,
                 "defense": 58,
@@ -1755,9 +1755,9 @@
             ]
         },
         {
-            "number": 6,
+            "id": 6,
             "name": "charizard",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
@@ -1767,7 +1767,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 78,
                 "attack": 84,
                 "defense": 78,
@@ -2221,15 +2221,15 @@
             ]
         },
         {
-            "number": 7,
+            "id": 7,
             "name": "squirtle",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 44,
                 "attack": 48,
                 "defense": 65,
@@ -2615,15 +2615,15 @@
             ]
         },
         {
-            "number": 8,
+            "id": 8,
             "name": "wartortle",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 59,
                 "attack": 63,
                 "defense": 80,
@@ -2949,15 +2949,15 @@
             ]
         },
         {
-            "number": 9,
+            "id": 9,
             "name": "blastoise",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 79,
                 "attack": 83,
                 "defense": 100,
@@ -3351,15 +3351,15 @@
             ]
         },
         {
-            "number": 10,
+            "id": 10,
             "name": "caterpie",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 45,
                 "attack": 30,
                 "defense": 35,
@@ -3401,15 +3401,15 @@
             ]
         },
         {
-            "number": 11,
+            "id": 11,
             "name": "metapod",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 20,
                 "defense": 55,
@@ -3447,9 +3447,9 @@
             ]
         },
         {
-            "number": 12,
+            "id": 12,
             "name": "butterfree",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -3459,7 +3459,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 45,
                 "defense": 50,
@@ -3789,9 +3789,9 @@
             ]
         },
         {
-            "number": 13,
+            "id": 13,
             "name": "weedle",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -3801,7 +3801,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 35,
                 "defense": 30,
@@ -3839,9 +3839,9 @@
             ]
         },
         {
-            "number": 14,
+            "id": 14,
             "name": "kakuna",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -3851,7 +3851,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 45,
                 "attack": 25,
                 "defense": 50,
@@ -3889,9 +3889,9 @@
             ]
         },
         {
-            "number": 15,
+            "id": 15,
             "name": "beedrill",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -3901,7 +3901,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 90,
                 "defense": 40,
@@ -4223,9 +4223,9 @@
             ]
         },
         {
-            "number": 16,
+            "id": 16,
             "name": "pidgey",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -4235,7 +4235,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 45,
                 "defense": 40,
@@ -4513,9 +4513,9 @@
             ]
         },
         {
-            "number": 17,
+            "id": 17,
             "name": "pidgeotto",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -4525,7 +4525,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 63,
                 "attack": 60,
                 "defense": 55,
@@ -4787,9 +4787,9 @@
             ]
         },
         {
-            "number": 18,
+            "id": 18,
             "name": "pidgeot",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -4799,7 +4799,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 83,
                 "attack": 80,
                 "defense": 75,
@@ -5069,15 +5069,15 @@
             ]
         },
         {
-            "number": 19,
+            "id": 19,
             "name": "rattata",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 30,
                 "attack": 56,
                 "defense": 35,
@@ -5423,15 +5423,15 @@
             ]
         },
         {
-            "number": 20,
+            "id": 20,
             "name": "raticate",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 81,
                 "defense": 60,
@@ -5773,9 +5773,9 @@
             ]
         },
         {
-            "number": 21,
+            "id": 21,
             "name": "spearow",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -5785,7 +5785,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 60,
                 "defense": 30,
@@ -6075,9 +6075,9 @@
             ]
         },
         {
-            "number": 22,
+            "id": 22,
             "name": "fearow",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -6087,7 +6087,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 90,
                 "defense": 65,
@@ -6361,15 +6361,15 @@
             ]
         },
         {
-            "number": 23,
+            "id": 23,
             "name": "ekans",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 35,
                 "attack": 60,
                 "defense": 44,
@@ -6723,15 +6723,15 @@
             ]
         },
         {
-            "number": 24,
+            "id": 24,
             "name": "arbok",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 95,
                 "defense": 69,
@@ -7073,15 +7073,15 @@
             ]
         },
         {
-            "number": 25,
+            "id": 25,
             "name": "pikachu",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 35,
                 "attack": 55,
                 "defense": 40,
@@ -7427,15 +7427,15 @@
             ]
         },
         {
-            "number": 26,
+            "id": 26,
             "name": "raichu",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 90,
                 "defense": 55,
@@ -7761,15 +7761,15 @@
             ]
         },
         {
-            "number": 27,
+            "id": 27,
             "name": "sandshrew",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 75,
                 "defense": 85,
@@ -8123,15 +8123,15 @@
             ]
         },
         {
-            "number": 28,
+            "id": 28,
             "name": "sandslash",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 75,
                 "attack": 100,
                 "defense": 110,
@@ -8477,15 +8477,15 @@
             ]
         },
         {
-            "number": 29,
+            "id": 29,
             "name": "nidoran-f",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 47,
                 "defense": 52,
@@ -8819,15 +8819,15 @@
             ]
         },
         {
-            "number": 30,
+            "id": 30,
             "name": "nidorina",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 70,
                 "attack": 62,
                 "defense": 67,
@@ -9137,9 +9137,9 @@
             ]
         },
         {
-            "number": 31,
+            "id": 31,
             "name": "nidoqueen",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
@@ -9149,7 +9149,7 @@
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 92,
                 "defense": 87,
@@ -9627,15 +9627,15 @@
             ]
         },
         {
-            "number": 32,
+            "id": 32,
             "name": "nidoran-m",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 46,
                 "attack": 57,
                 "defense": 40,
@@ -9973,15 +9973,15 @@
             ]
         },
         {
-            "number": 33,
+            "id": 33,
             "name": "nidorino",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 61,
                 "attack": 72,
                 "defense": 57,
@@ -10291,9 +10291,9 @@
             ]
         },
         {
-            "number": 34,
+            "id": 34,
             "name": "nidoking",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
@@ -10303,7 +10303,7 @@
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 81,
                 "attack": 102,
                 "defense": 77,
@@ -10797,15 +10797,15 @@
             ]
         },
         {
-            "number": 35,
+            "id": 35,
             "name": "clefairy",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fairy"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 70,
                 "attack": 45,
                 "defense": 48,
@@ -11339,15 +11339,15 @@
             ]
         },
         {
-            "number": 36,
+            "id": 36,
             "name": "clefable",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fairy"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 95,
                 "attack": 70,
                 "defense": 73,
@@ -11845,15 +11845,15 @@
             ]
         },
         {
-            "number": 37,
+            "id": 37,
             "name": "vulpix",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 38,
                 "attack": 41,
                 "defense": 40,
@@ -12167,15 +12167,15 @@
             ]
         },
         {
-            "number": 38,
+            "id": 38,
             "name": "ninetales",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 73,
                 "attack": 76,
                 "defense": 75,
@@ -12461,9 +12461,9 @@
             ]
         },
         {
-            "number": 39,
+            "id": 39,
             "name": "jigglypuff",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -12473,7 +12473,7 @@
                     "name": "fairy"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 115,
                 "attack": 45,
                 "defense": 20,
@@ -12939,9 +12939,9 @@
             ]
         },
         {
-            "number": 40,
+            "id": 40,
             "name": "wigglytuff",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -12951,7 +12951,7 @@
                     "name": "fairy"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 140,
                 "attack": 70,
                 "defense": 45,
@@ -13409,9 +13409,9 @@
             ]
         },
         {
-            "number": 41,
+            "id": 41,
             "name": "zubat",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
@@ -13421,7 +13421,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 45,
                 "defense": 35,
@@ -13751,9 +13751,9 @@
             ]
         },
         {
-            "number": 42,
+            "id": 42,
             "name": "golbat",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
@@ -13763,7 +13763,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 75,
                 "attack": 80,
                 "defense": 70,
@@ -14073,9 +14073,9 @@
             ]
         },
         {
-            "number": 43,
+            "id": 43,
             "name": "oddish",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -14085,7 +14085,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 45,
                 "attack": 50,
                 "defense": 55,
@@ -14367,9 +14367,9 @@
             ]
         },
         {
-            "number": 44,
+            "id": 44,
             "name": "gloom",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -14379,7 +14379,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 65,
                 "defense": 70,
@@ -14641,9 +14641,9 @@
             ]
         },
         {
-            "number": 45,
+            "id": 45,
             "name": "vileplume",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -14653,7 +14653,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 75,
                 "attack": 80,
                 "defense": 85,
@@ -14919,9 +14919,9 @@
             ]
         },
         {
-            "number": 46,
+            "id": 46,
             "name": "paras",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -14931,7 +14931,7 @@
                     "name": "grass"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 35,
                 "attack": 70,
                 "defense": 55,
@@ -15289,9 +15289,9 @@
             ]
         },
         {
-            "number": 47,
+            "id": 47,
             "name": "parasect",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -15301,7 +15301,7 @@
                     "name": "grass"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 95,
                 "defense": 80,
@@ -15623,9 +15623,9 @@
             ]
         },
         {
-            "number": 48,
+            "id": 48,
             "name": "venonat",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -15635,7 +15635,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 55,
                 "defense": 50,
@@ -15909,9 +15909,9 @@
             ]
         },
         {
-            "number": 49,
+            "id": 49,
             "name": "venomoth",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -15921,7 +15921,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 70,
                 "attack": 65,
                 "defense": 60,
@@ -16247,15 +16247,15 @@
             ]
         },
         {
-            "number": 50,
+            "id": 50,
             "name": "diglett",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 10,
                 "attack": 55,
                 "defense": 25,
@@ -16537,15 +16537,15 @@
             ]
         },
         {
-            "number": 51,
+            "id": 51,
             "name": "dugtrio",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 35,
                 "attack": 100,
                 "defense": 50,
@@ -16823,15 +16823,15 @@
             ]
         },
         {
-            "number": 52,
+            "id": 52,
             "name": "meowth",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 45,
                 "defense": 35,
@@ -17229,15 +17229,15 @@
             ]
         },
         {
-            "number": 53,
+            "id": 53,
             "name": "persian",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 70,
                 "defense": 60,
@@ -17631,15 +17631,15 @@
             ]
         },
         {
-            "number": 54,
+            "id": 54,
             "name": "psyduck",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 52,
                 "defense": 48,
@@ -18061,15 +18061,15 @@
             ]
         },
         {
-            "number": 55,
+            "id": 55,
             "name": "golduck",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 82,
                 "defense": 78,
@@ -18475,15 +18475,15 @@
             ]
         },
         {
-            "number": 56,
+            "id": 56,
             "name": "mankey",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 80,
                 "defense": 35,
@@ -18953,15 +18953,15 @@
             ]
         },
         {
-            "number": 57,
+            "id": 57,
             "name": "primeape",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 105,
                 "defense": 60,
@@ -19407,15 +19407,15 @@
             ]
         },
         {
-            "number": 58,
+            "id": 58,
             "name": "growlithe",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 70,
                 "defense": 45,
@@ -19733,15 +19733,15 @@
             ]
         },
         {
-            "number": 59,
+            "id": 59,
             "name": "arcanine",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 110,
                 "defense": 80,
@@ -20051,15 +20051,15 @@
             ]
         },
         {
-            "number": 60,
+            "id": 60,
             "name": "poliwag",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 50,
                 "defense": 40,
@@ -20345,15 +20345,15 @@
             ]
         },
         {
-            "number": 61,
+            "id": 61,
             "name": "poliwhirl",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 65,
                 "defense": 65,
@@ -20683,9 +20683,9 @@
             ]
         },
         {
-            "number": 62,
+            "id": 62,
             "name": "poliwrath",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -20695,7 +20695,7 @@
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 95,
                 "defense": 95,
@@ -21053,15 +21053,15 @@
             ]
         },
         {
-            "number": 63,
+            "id": 63,
             "name": "abra",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 25,
                 "attack": 20,
                 "defense": 15,
@@ -21455,15 +21455,15 @@
             ]
         },
         {
-            "number": 64,
+            "id": 64,
             "name": "kadabra",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 35,
                 "defense": 30,
@@ -21865,15 +21865,15 @@
             ]
         },
         {
-            "number": 65,
+            "id": 65,
             "name": "alakazam",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 50,
                 "defense": 45,
@@ -22287,15 +22287,15 @@
             ]
         },
         {
-            "number": 66,
+            "id": 66,
             "name": "machop",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 70,
                 "attack": 80,
                 "defense": 50,
@@ -22697,15 +22697,15 @@
             ]
         },
         {
-            "number": 67,
+            "id": 67,
             "name": "machoke",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 100,
                 "defense": 70,
@@ -23067,15 +23067,15 @@
             ]
         },
         {
-            "number": 68,
+            "id": 68,
             "name": "machamp",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 130,
                 "defense": 80,
@@ -23453,9 +23453,9 @@
             ]
         },
         {
-            "number": 69,
+            "id": 69,
             "name": "bellsprout",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -23465,7 +23465,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 75,
                 "defense": 35,
@@ -23771,9 +23771,9 @@
             ]
         },
         {
-            "number": 70,
+            "id": 70,
             "name": "weepinbell",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -23783,7 +23783,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 90,
                 "defense": 50,
@@ -24049,9 +24049,9 @@
             ]
         },
         {
-            "number": 71,
+            "id": 71,
             "name": "victreebel",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -24061,7 +24061,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 105,
                 "defense": 65,
@@ -24351,9 +24351,9 @@
             ]
         },
         {
-            "number": 72,
+            "id": 72,
             "name": "tentacool",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -24363,7 +24363,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 40,
                 "defense": 35,
@@ -24705,9 +24705,9 @@
             ]
         },
         {
-            "number": 73,
+            "id": 73,
             "name": "tentacruel",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -24717,7 +24717,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 70,
                 "defense": 65,
@@ -25031,9 +25031,9 @@
             ]
         },
         {
-            "number": 74,
+            "id": 74,
             "name": "geodude",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -25043,7 +25043,7 @@
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 80,
                 "defense": 100,
@@ -25389,9 +25389,9 @@
             ]
         },
         {
-            "number": 75,
+            "id": 75,
             "name": "graveler",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -25401,7 +25401,7 @@
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 95,
                 "defense": 115,
@@ -25731,9 +25731,9 @@
             ]
         },
         {
-            "number": 76,
+            "id": 76,
             "name": "golem",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -25743,7 +25743,7 @@
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 120,
                 "defense": 130,
@@ -26109,15 +26109,15 @@
             ]
         },
         {
-            "number": 77,
+            "id": 77,
             "name": "ponyta",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 85,
                 "defense": 55,
@@ -26399,15 +26399,15 @@
             ]
         },
         {
-            "number": 78,
+            "id": 78,
             "name": "rapidash",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 100,
                 "defense": 70,
@@ -26689,9 +26689,9 @@
             ]
         },
         {
-            "number": 79,
+            "id": 79,
             "name": "slowpoke",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -26701,7 +26701,7 @@
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 65,
                 "defense": 65,
@@ -27119,9 +27119,9 @@
             ]
         },
         {
-            "number": 80,
+            "id": 80,
             "name": "slowbro",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -27131,7 +27131,7 @@
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 95,
                 "attack": 75,
                 "defense": 110,
@@ -27609,9 +27609,9 @@
             ]
         },
         {
-            "number": 81,
+            "id": 81,
             "name": "magnemite",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
@@ -27621,7 +27621,7 @@
                     "name": "steel"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 25,
                 "attack": 35,
                 "defense": 70,
@@ -27895,9 +27895,9 @@
             ]
         },
         {
-            "number": 82,
+            "id": 82,
             "name": "magneton",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
@@ -27907,7 +27907,7 @@
                     "name": "steel"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 60,
                 "defense": 95,
@@ -28197,9 +28197,9 @@
             ]
         },
         {
-            "number": 83,
+            "id": 83,
             "name": "farfetchd",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -28209,7 +28209,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 52,
                 "attack": 90,
                 "defense": 55,
@@ -28583,9 +28583,9 @@
             ]
         },
         {
-            "number": 84,
+            "id": 84,
             "name": "doduo",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -28595,7 +28595,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 35,
                 "attack": 85,
                 "defense": 45,
@@ -28881,9 +28881,9 @@
             ]
         },
         {
-            "number": 85,
+            "id": 85,
             "name": "dodrio",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
@@ -28893,7 +28893,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 110,
                 "defense": 70,
@@ -29171,15 +29171,15 @@
             ]
         },
         {
-            "number": 86,
+            "id": 86,
             "name": "seel",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 45,
                 "defense": 55,
@@ -29493,9 +29493,9 @@
             ]
         },
         {
-            "number": 87,
+            "id": 87,
             "name": "dewgong",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -29505,7 +29505,7 @@
                     "name": "ice"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 70,
                 "defense": 80,
@@ -29787,15 +29787,15 @@
             ]
         },
         {
-            "number": 88,
+            "id": 88,
             "name": "grimer",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 80,
                 "defense": 50,
@@ -30149,15 +30149,15 @@
             ]
         },
         {
-            "number": 89,
+            "id": 89,
             "name": "muk",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 105,
                 "attack": 105,
                 "defense": 75,
@@ -30503,15 +30503,15 @@
             ]
         },
         {
-            "number": 90,
+            "id": 90,
             "name": "shellder",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 30,
                 "attack": 65,
                 "defense": 100,
@@ -30793,9 +30793,9 @@
             ]
         },
         {
-            "number": 91,
+            "id": 91,
             "name": "cloyster",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -30805,7 +30805,7 @@
                     "name": "ice"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 95,
                 "defense": 180,
@@ -31083,9 +31083,9 @@
             ]
         },
         {
-            "number": 92,
+            "id": 92,
             "name": "gastly",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ghost"
@@ -31095,7 +31095,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 30,
                 "attack": 35,
                 "defense": 30,
@@ -31445,9 +31445,9 @@
             ]
         },
         {
-            "number": 93,
+            "id": 93,
             "name": "haunter",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ghost"
@@ -31457,7 +31457,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 45,
                 "attack": 50,
                 "defense": 45,
@@ -31787,9 +31787,9 @@
             ]
         },
         {
-            "number": 94,
+            "id": 94,
             "name": "gengar",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ghost"
@@ -31799,7 +31799,7 @@
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 65,
                 "defense": 60,
@@ -32217,9 +32217,9 @@
             ]
         },
         {
-            "number": 95,
+            "id": 95,
             "name": "onix",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -32229,7 +32229,7 @@
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 35,
                 "attack": 45,
                 "defense": 160,
@@ -32571,15 +32571,15 @@
             ]
         },
         {
-            "number": 96,
+            "id": 96,
             "name": "drowzee",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 48,
                 "defense": 45,
@@ -32997,15 +32997,15 @@
             ]
         },
         {
-            "number": 97,
+            "id": 97,
             "name": "hypno",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 85,
                 "attack": 73,
                 "defense": 70,
@@ -33411,15 +33411,15 @@
             ]
         },
         {
-            "number": 98,
+            "id": 98,
             "name": "krabby",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 30,
                 "attack": 105,
                 "defense": 90,
@@ -33749,15 +33749,15 @@
             ]
         },
         {
-            "number": 99,
+            "id": 99,
             "name": "kingler",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 130,
                 "defense": 115,
@@ -34079,15 +34079,15 @@
             ]
         },
         {
-            "number": 100,
+            "id": 100,
             "name": "voltorb",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 30,
                 "defense": 50,
@@ -34345,15 +34345,15 @@
             ]
         },
         {
-            "number": 101,
+            "id": 101,
             "name": "electrode",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 50,
                 "defense": 70,
@@ -34627,9 +34627,9 @@
             ]
         },
         {
-            "number": 102,
+            "id": 102,
             "name": "exeggcute",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -34639,7 +34639,7 @@
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 40,
                 "defense": 80,
@@ -34965,9 +34965,9 @@
             ]
         },
         {
-            "number": 103,
+            "id": 103,
             "name": "exeggutor",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
@@ -34977,7 +34977,7 @@
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 95,
                 "attack": 95,
                 "defense": 85,
@@ -35287,15 +35287,15 @@
             ]
         },
         {
-            "number": 104,
+            "id": 104,
             "name": "cubone",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 50,
                 "defense": 95,
@@ -35697,15 +35697,15 @@
             ]
         },
         {
-            "number": 105,
+            "id": 105,
             "name": "marowak",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 80,
                 "defense": 110,
@@ -36103,15 +36103,15 @@
             ]
         },
         {
-            "number": 106,
+            "id": 106,
             "name": "hitmonlee",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 120,
                 "defense": 53,
@@ -36465,15 +36465,15 @@
             ]
         },
         {
-            "number": 107,
+            "id": 107,
             "name": "hitmonchan",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fighting"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 50,
                 "attack": 105,
                 "defense": 79,
@@ -36807,15 +36807,15 @@
             ]
         },
         {
-            "number": 108,
+            "id": 108,
             "name": "lickitung",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 55,
                 "defense": 75,
@@ -37277,15 +37277,15 @@
             ]
         },
         {
-            "number": 109,
+            "id": 109,
             "name": "koffing",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 65,
                 "defense": 95,
@@ -37583,15 +37583,15 @@
             ]
         },
         {
-            "number": 110,
+            "id": 110,
             "name": "weezing",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "poison"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 90,
                 "defense": 120,
@@ -37865,9 +37865,9 @@
             ]
         },
         {
-            "number": 111,
+            "id": 111,
             "name": "rhyhorn",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
@@ -37877,7 +37877,7 @@
                     "name": "rock"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 85,
                 "defense": 95,
@@ -38287,9 +38287,9 @@
             ]
         },
         {
-            "number": 112,
+            "id": 112,
             "name": "rhydon",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ground"
@@ -38299,7 +38299,7 @@
                     "name": "rock"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 105,
                 "attack": 130,
                 "defense": 120,
@@ -38773,15 +38773,15 @@
             ]
         },
         {
-            "number": 113,
+            "id": 113,
             "name": "chansey",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 250,
                 "attack": 5,
                 "defense": 5,
@@ -39291,15 +39291,15 @@
             ]
         },
         {
-            "number": 114,
+            "id": 114,
             "name": "tangela",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "grass"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 55,
                 "defense": 115,
@@ -39637,15 +39637,15 @@
             ]
         },
         {
-            "number": 115,
+            "id": 115,
             "name": "kangaskhan",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 105,
                 "attack": 95,
                 "defense": 80,
@@ -40127,15 +40127,15 @@
             ]
         },
         {
-            "number": 116,
+            "id": 116,
             "name": "horsea",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 30,
                 "attack": 40,
                 "defense": 70,
@@ -40421,15 +40421,15 @@
             ]
         },
         {
-            "number": 117,
+            "id": 117,
             "name": "seadra",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 65,
                 "defense": 95,
@@ -40687,15 +40687,15 @@
             ]
         },
         {
-            "number": 118,
+            "id": 118,
             "name": "goldeen",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 45,
                 "attack": 67,
                 "defense": 60,
@@ -40989,15 +40989,15 @@
             ]
         },
         {
-            "number": 119,
+            "id": 119,
             "name": "seaking",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 92,
                 "defense": 65,
@@ -41275,15 +41275,15 @@
             ]
         },
         {
-            "number": 120,
+            "id": 120,
             "name": "staryu",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 30,
                 "attack": 45,
                 "defense": 55,
@@ -41613,9 +41613,9 @@
             ]
         },
         {
-            "number": 121,
+            "id": 121,
             "name": "starmie",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -41625,7 +41625,7 @@
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 75,
                 "defense": 85,
@@ -41975,9 +41975,9 @@
             ]
         },
         {
-            "number": 122,
+            "id": 122,
             "name": "mr-mime",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
@@ -41987,7 +41987,7 @@
                     "name": "fairy"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 40,
                 "attack": 45,
                 "defense": 65,
@@ -42489,9 +42489,9 @@
             ]
         },
         {
-            "number": 123,
+            "id": 123,
             "name": "scyther",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
@@ -42501,7 +42501,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 70,
                 "attack": 110,
                 "defense": 80,
@@ -42819,9 +42819,9 @@
             ]
         },
         {
-            "number": 124,
+            "id": 124,
             "name": "jynx",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ice"
@@ -42831,7 +42831,7 @@
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 50,
                 "defense": 35,
@@ -43269,15 +43269,15 @@
             ]
         },
         {
-            "number": 125,
+            "id": 125,
             "name": "electabuzz",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 83,
                 "defense": 57,
@@ -43627,15 +43627,15 @@
             ]
         },
         {
-            "number": 126,
+            "id": 126,
             "name": "magmar",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 95,
                 "defense": 57,
@@ -43965,15 +43965,15 @@
             ]
         },
         {
-            "number": 127,
+            "id": 127,
             "name": "pinsir",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "bug"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 125,
                 "defense": 100,
@@ -44319,15 +44319,15 @@
             ]
         },
         {
-            "number": 128,
+            "id": 128,
             "name": "tauros",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 75,
                 "attack": 100,
                 "defense": 95,
@@ -44669,15 +44669,15 @@
             ]
         },
         {
-            "number": 129,
+            "id": 129,
             "name": "magikarp",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 20,
                 "attack": 10,
                 "defense": 55,
@@ -44715,9 +44715,9 @@
             ]
         },
         {
-            "number": 130,
+            "id": 130,
             "name": "gyarados",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -44727,7 +44727,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 95,
                 "attack": 125,
                 "defense": 79,
@@ -45097,9 +45097,9 @@
             ]
         },
         {
-            "number": 131,
+            "id": 131,
             "name": "lapras",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
@@ -45109,7 +45109,7 @@
                     "name": "ice"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 130,
                 "attack": 85,
                 "defense": 80,
@@ -45507,15 +45507,15 @@
             ]
         },
         {
-            "number": 132,
+            "id": 132,
             "name": "ditto",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 48,
                 "attack": 48,
                 "defense": 48,
@@ -45541,15 +45541,15 @@
             ]
         },
         {
-            "number": 133,
+            "id": 133,
             "name": "eevee",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 55,
                 "attack": 55,
                 "defense": 50,
@@ -45831,15 +45831,15 @@
             ]
         },
         {
-            "number": 134,
+            "id": 134,
             "name": "vaporeon",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 130,
                 "attack": 65,
                 "defense": 60,
@@ -46173,15 +46173,15 @@
             ]
         },
         {
-            "number": 135,
+            "id": 135,
             "name": "jolteon",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 65,
                 "defense": 60,
@@ -46495,15 +46495,15 @@
             ]
         },
         {
-            "number": 136,
+            "id": 136,
             "name": "flareon",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 130,
                 "defense": 60,
@@ -46817,15 +46817,15 @@
             ]
         },
         {
-            "number": 137,
+            "id": 137,
             "name": "porygon",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 65,
                 "attack": 60,
                 "defense": 70,
@@ -47151,9 +47151,9 @@
             ]
         },
         {
-            "number": 138,
+            "id": 138,
             "name": "omanyte",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -47163,7 +47163,7 @@
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 35,
                 "attack": 40,
                 "defense": 100,
@@ -47497,9 +47497,9 @@
             ]
         },
         {
-            "number": 139,
+            "id": 139,
             "name": "omastar",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -47509,7 +47509,7 @@
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 70,
                 "attack": 60,
                 "defense": 125,
@@ -47839,9 +47839,9 @@
             ]
         },
         {
-            "number": 140,
+            "id": 140,
             "name": "kabuto",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -47851,7 +47851,7 @@
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 30,
                 "attack": 80,
                 "defense": 90,
@@ -48181,9 +48181,9 @@
             ]
         },
         {
-            "number": 141,
+            "id": 141,
             "name": "kabutops",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -48193,7 +48193,7 @@
                     "name": "water"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 60,
                 "attack": 115,
                 "defense": 105,
@@ -48587,9 +48587,9 @@
             ]
         },
         {
-            "number": 142,
+            "id": 142,
             "name": "aerodactyl",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "rock"
@@ -48599,7 +48599,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 80,
                 "attack": 105,
                 "defense": 65,
@@ -48985,15 +48985,15 @@
             ]
         },
         {
-            "number": 143,
+            "id": 143,
             "name": "snorlax",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "normal"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 160,
                 "attack": 110,
                 "defense": 65,
@@ -49467,9 +49467,9 @@
             ]
         },
         {
-            "number": 144,
+            "id": 144,
             "name": "articuno",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "ice"
@@ -49479,7 +49479,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 85,
                 "defense": 100,
@@ -49785,9 +49785,9 @@
             ]
         },
         {
-            "number": 145,
+            "id": 145,
             "name": "zapdos",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "electric"
@@ -49797,7 +49797,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 90,
                 "defense": 85,
@@ -50095,9 +50095,9 @@
             ]
         },
         {
-            "number": 146,
+            "id": 146,
             "name": "moltres",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "fire"
@@ -50107,7 +50107,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 90,
                 "attack": 100,
                 "defense": 90,
@@ -50401,15 +50401,15 @@
             ]
         },
         {
-            "number": 147,
+            "id": 147,
             "name": "dratini",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "dragon"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 41,
                 "attack": 64,
                 "defense": 45,
@@ -50735,15 +50735,15 @@
             ]
         },
         {
-            "number": 148,
+            "id": 148,
             "name": "dragonair",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "dragon"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 61,
                 "attack": 84,
                 "defense": 65,
@@ -51053,9 +51053,9 @@
             ]
         },
         {
-            "number": 149,
+            "id": 149,
             "name": "dragonite",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "dragon"
@@ -51065,7 +51065,7 @@
                     "name": "flying"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 91,
                 "attack": 134,
                 "defense": 95,
@@ -51535,15 +51535,15 @@
             ]
         },
         {
-            "number": 150,
+            "id": 150,
             "name": "mewtwo",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 106,
                 "attack": 110,
                 "defense": 90,
@@ -52109,15 +52109,15 @@
             ]
         },
         {
-            "number": 151,
+            "id": 151,
             "name": "mew",
-            "types": [
+            "typing": [
                 {
                     "idx": 1,
                     "name": "psychic"
                 }
             ],
-            "stats": {
+            "baseStats": {
                 "hp": 100,
                 "attack": 100,
                 "defense": 100,
@@ -53121,141 +53121,141 @@
     ],
     "abilities": [
         {
-            "number": 1,
+            "id": 1,
             "name": "stench",
-            "effect": "This Pok\u00e9mon's damaging moves have a 10% chance to make the target flinch with each hit if they do not already cause flinching as a secondary effect.\n\nThis ability does not stack with a held item.\n\nOverworld: The wild encounter rate is halved while this Pok\u00e9mon is first in the party."
+            "description": "This Pok\u00e9mon's damaging moves have a 10% chance to make the target flinch with each hit if they do not already cause flinching as a secondary effect.\n\nThis ability does not stack with a held item.\n\nOverworld: The wild encounter rate is halved while this Pok\u00e9mon is first in the party."
         },
         {
-            "number": 2,
+            "id": 2,
             "name": "drizzle",
-            "effect": "The weather changes to rain when this Pok\u00e9mon enters battle and does not end unless replaced by another weather condition.\n\nIf multiple Pok\u00e9mon with this ability, drought, sand stream, or snow warning are sent out at the same time, the abilities will activate in order of Speed, respecting trick room.  Each ability's weather will cancel the previous weather, and only the weather summoned by the slowest of the Pok\u00e9mon will stay."
+            "description": "The weather changes to rain when this Pok\u00e9mon enters battle and does not end unless replaced by another weather condition.\n\nIf multiple Pok\u00e9mon with this ability, drought, sand stream, or snow warning are sent out at the same time, the abilities will activate in order of Speed, respecting trick room.  Each ability's weather will cancel the previous weather, and only the weather summoned by the slowest of the Pok\u00e9mon will stay."
         },
         {
-            "number": 3,
+            "id": 3,
             "name": "speed-boost",
-            "effect": "This Pok\u00e9mon's Speed rises one stage after each turn."
+            "description": "This Pok\u00e9mon's Speed rises one stage after each turn."
         },
         {
-            "number": 4,
+            "id": 4,
             "name": "battle-armor",
-            "effect": "Moves cannot score critical hits against this Pok\u00e9mon.\n\nThis ability functions identically to shell armor."
+            "description": "Moves cannot score critical hits against this Pok\u00e9mon.\n\nThis ability functions identically to shell armor."
         },
         {
-            "number": 5,
+            "id": 5,
             "name": "sturdy",
-            "effect": "When this Pok\u00e9mon is at full HP, any hit that would knock it out will instead leave it with 1 HP.  Regardless of its current HP, it is also immune to the one-hit KO moves: fissure, guillotine, horn drill, and sheer cold.\n\nIf this Pok\u00e9mon is holding a focus sash, this ability takes precedence and the item will not be consumed."
+            "description": "When this Pok\u00e9mon is at full HP, any hit that would knock it out will instead leave it with 1 HP.  Regardless of its current HP, it is also immune to the one-hit KO moves: fissure, guillotine, horn drill, and sheer cold.\n\nIf this Pok\u00e9mon is holding a focus sash, this ability takes precedence and the item will not be consumed."
         },
         {
-            "number": 6,
+            "id": 6,
             "name": "damp",
-            "effect": "While this Pok\u00e9mon is in battle, self destruct and explosion will fail and aftermath will not take effect."
+            "description": "While this Pok\u00e9mon is in battle, self destruct and explosion will fail and aftermath will not take effect."
         },
         {
-            "number": 7,
+            "id": 7,
             "name": "limber",
-            "effect": "This Pok\u00e9mon cannot be paralyzed.\n\nIf a Pok\u00e9mon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle."
+            "description": "This Pok\u00e9mon cannot be paralyzed.\n\nIf a Pok\u00e9mon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle."
         },
         {
-            "number": 8,
+            "id": 8,
             "name": "sand-veil",
-            "effect": "During a sandstorm, this Pok\u00e9mon has 1.25\u00d7 its evasion, and it does not take sandstorm damage regardless of type.\n\nThe evasion bonus does not count as a stat modifier.\n\nOverworld: If the lead Pok\u00e9mon has this ability, the wild encounter rate is halved in a sandstorm."
+            "description": "During a sandstorm, this Pok\u00e9mon has 1.25\u00d7 its evasion, and it does not take sandstorm damage regardless of type.\n\nThe evasion bonus does not count as a stat modifier.\n\nOverworld: If the lead Pok\u00e9mon has this ability, the wild encounter rate is halved in a sandstorm."
         },
         {
-            "number": 9,
+            "id": 9,
             "name": "static",
-            "effect": "Whenever a move makes contact with this Pok\u00e9mon, the move's user has a 30% chance of being paralyzed.\n\nPok\u00e9mon that are immune to electric-type moves can still be paralyzed by this ability.\n\nOverworld: If the lead Pok\u00e9mon has this ability, there is a 50% chance that encounters will be with an electric Pok\u00e9mon, if applicable."
+            "description": "Whenever a move makes contact with this Pok\u00e9mon, the move's user has a 30% chance of being paralyzed.\n\nPok\u00e9mon that are immune to electric-type moves can still be paralyzed by this ability.\n\nOverworld: If the lead Pok\u00e9mon has this ability, there is a 50% chance that encounters will be with an electric Pok\u00e9mon, if applicable."
         },
         {
-            "number": 10,
+            "id": 10,
             "name": "volt-absorb",
-            "effect": "Whenever an electric-type move hits this Pok\u00e9mon, it heals for 1/4 of its maximum HP, negating any other effect on it.\n\nThis ability will not take effect if this Pok\u00e9mon is ground-type and thus immune to Electric moves.  Electric moves will ignore this Pok\u00e9mon's substitute.\n\nThis effect includes non-damaging moves, i.e. thunder wave."
+            "description": "Whenever an electric-type move hits this Pok\u00e9mon, it heals for 1/4 of its maximum HP, negating any other effect on it.\n\nThis ability will not take effect if this Pok\u00e9mon is ground-type and thus immune to Electric moves.  Electric moves will ignore this Pok\u00e9mon's substitute.\n\nThis effect includes non-damaging moves, i.e. thunder wave."
         },
         {
-            "number": 11,
+            "id": 11,
             "name": "water-absorb",
-            "effect": "Whenever a water-type move hits this Pok\u00e9mon, it heals for 1/4 of its maximum HP, negating any other effect on it.\n\nWater moves will ignore this Pok\u00e9mon's substitute."
+            "description": "Whenever a water-type move hits this Pok\u00e9mon, it heals for 1/4 of its maximum HP, negating any other effect on it.\n\nWater moves will ignore this Pok\u00e9mon's substitute."
         },
         {
-            "number": 12,
+            "id": 12,
             "name": "oblivious",
-            "effect": "This Pok\u00e9mon cannot be infatuated and is immune to captivate.\n\nIf a Pok\u00e9mon is infatuated and acquires this ability, its infatuation is cleared."
+            "description": "This Pok\u00e9mon cannot be infatuated and is immune to captivate.\n\nIf a Pok\u00e9mon is infatuated and acquires this ability, its infatuation is cleared."
         },
         {
-            "number": 13,
+            "id": 13,
             "name": "cloud-nine",
-            "effect": "While this Pok\u00e9mon is in battle, weather can still be in play, but will not have any of its effects.\n\nThis ability functions identically to air lock."
+            "description": "While this Pok\u00e9mon is in battle, weather can still be in play, but will not have any of its effects.\n\nThis ability functions identically to air lock."
         },
         {
-            "number": 14,
+            "id": 14,
             "name": "compound-eyes",
-            "effect": "This Pok\u00e9mon's moves have 1.3\u00d7 their accuracy.\n\nThis ability has no effect on the one-hit KO moves (fissure, guillotine, horn drill, and sheer cold).\n\nOverworld: If the first Pok\u00e9mon in the party has this ability, the chance of a wild Pok\u00e9mon holding a particular item is raised from 50%, 5%, or 1% to 60%, 20%, or 5%, respectively."
+            "description": "This Pok\u00e9mon's moves have 1.3\u00d7 their accuracy.\n\nThis ability has no effect on the one-hit KO moves (fissure, guillotine, horn drill, and sheer cold).\n\nOverworld: If the first Pok\u00e9mon in the party has this ability, the chance of a wild Pok\u00e9mon holding a particular item is raised from 50%, 5%, or 1% to 60%, 20%, or 5%, respectively."
         },
         {
-            "number": 15,
+            "id": 15,
             "name": "insomnia",
-            "effect": "This Pok\u00e9mon cannot be asleep.\n\nThis causes rest to fail altogether.  If a Pok\u00e9mon is asleep and acquires this ability, it will immediately wake up; this includes when regaining a lost ability upon leaving battle.\n\nThis ability functions identically to vital spirit in battle."
+            "description": "This Pok\u00e9mon cannot be asleep.\n\nThis causes rest to fail altogether.  If a Pok\u00e9mon is asleep and acquires this ability, it will immediately wake up; this includes when regaining a lost ability upon leaving battle.\n\nThis ability functions identically to vital spirit in battle."
         },
         {
-            "number": 16,
+            "id": 16,
             "name": "color-change",
-            "effect": "Whenever this Pok\u00e9mon takes damage from a move, the Pok\u00e9mon's type changes to match the move.\n\nIf the Pok\u00e9mon has two types, both are overridden.  The Pok\u00e9mon must directly take damage; for example, moves blocked by a substitute will not trigger this ability, nor will moves that deal damage indirectly, such as spikes.\n\nThis ability takes effect on only the last hit of a multiple-hit attack.\n\nIn Pok\u00e9mon Colosseum and XD: Gale of Darkness, this ability does not take effect on Shadow-type moves."
+            "description": "Whenever this Pok\u00e9mon takes damage from a move, the Pok\u00e9mon's type changes to match the move.\n\nIf the Pok\u00e9mon has two types, both are overridden.  The Pok\u00e9mon must directly take damage; for example, moves blocked by a substitute will not trigger this ability, nor will moves that deal damage indirectly, such as spikes.\n\nThis ability takes effect on only the last hit of a multiple-hit attack.\n\nIn Pok\u00e9mon Colosseum and XD: Gale of Darkness, this ability does not take effect on Shadow-type moves."
         },
         {
-            "number": 17,
+            "id": 17,
             "name": "immunity",
-            "effect": "This Pok\u00e9mon cannot be poisoned.  This includes bad poison.\n\nIf a Pok\u00e9mon is poisoned and acquires this ability, its poison is healed; this includes when regaining a lost ability upon leaving battle."
+            "description": "This Pok\u00e9mon cannot be poisoned.  This includes bad poison.\n\nIf a Pok\u00e9mon is poisoned and acquires this ability, its poison is healed; this includes when regaining a lost ability upon leaving battle."
         },
         {
-            "number": 18,
+            "id": 18,
             "name": "flash-fire",
-            "effect": "This Pok\u00e9mon is immune to fire-type moves.  Once this Pok\u00e9mon has been hit by a Fire move, its own Fire moves will inflict 1.5\u00d7 as much damage until it leaves battle.\n\nThis ability has no effect while the Pok\u00e9mon is frozen.  The Fire damage bonus is retained even if the Pok\u00e9mon is frozen and thawed or the ability is lost or disabled.  Fire moves will ignore this Pok\u00e9mon's substitute.  This ability takes effect even on non-damaging moves, i.e. will o wisp."
+            "description": "This Pok\u00e9mon is immune to fire-type moves.  Once this Pok\u00e9mon has been hit by a Fire move, its own Fire moves will inflict 1.5\u00d7 as much damage until it leaves battle.\n\nThis ability has no effect while the Pok\u00e9mon is frozen.  The Fire damage bonus is retained even if the Pok\u00e9mon is frozen and thawed or the ability is lost or disabled.  Fire moves will ignore this Pok\u00e9mon's substitute.  This ability takes effect even on non-damaging moves, i.e. will o wisp."
         },
         {
-            "number": 19,
+            "id": 19,
             "name": "shield-dust",
-            "effect": "This Pok\u00e9mon is immune to the extra effects of moves used against it.\n\nAn extra effect is a move's chance, listed as an \"effect chance\", to inflict a status ailment, cause a stat change, or make the target flinch in addition to the move's main effect.  For example, thunder shock's paralysis is an extra effect, but thunder wave's is not, nor are knock off's item removal and air cutter's increased critical hit rate."
+            "description": "This Pok\u00e9mon is immune to the extra effects of moves used against it.\n\nAn extra effect is a move's chance, listed as an \"effect chance\", to inflict a status ailment, cause a stat change, or make the target flinch in addition to the move's main effect.  For example, thunder shock's paralysis is an extra effect, but thunder wave's is not, nor are knock off's item removal and air cutter's increased critical hit rate."
         },
         {
-            "number": 20,
+            "id": 20,
             "name": "own-tempo",
-            "effect": "This Pok\u00e9mon cannot be confused.\n\nIf a Pok\u00e9mon is confused and acquires this ability, its confusion will immediately be healed."
+            "description": "This Pok\u00e9mon cannot be confused.\n\nIf a Pok\u00e9mon is confused and acquires this ability, its confusion will immediately be healed."
         },
         {
-            "number": 21,
+            "id": 21,
             "name": "suction-cups",
-            "effect": "This Pok\u00e9mon cannot be forced out of battle by moves such as whirlwind.\n\ndragon tail and circle throw still inflict damage against this Pok\u00e9mon.\n\nOverworld: If the lead Pok\u00e9mon has this ability, the success rate while fishing is increased."
+            "description": "This Pok\u00e9mon cannot be forced out of battle by moves such as whirlwind.\n\ndragon tail and circle throw still inflict damage against this Pok\u00e9mon.\n\nOverworld: If the lead Pok\u00e9mon has this ability, the success rate while fishing is increased."
         },
         {
-            "number": 22,
+            "id": 22,
             "name": "intimidate",
-            "effect": "When this Pok\u00e9mon enters battle, the opponent's Attack is lowered by one stage.  In a double battle, both opponents are affected.\n\nThis ability also takes effect when acquired during a battle, but will not take effect again if lost and reobtained without leaving battle.\n\nThis ability has no effect on an opponent that has a substitute.\n\nOverworld: If the first Pok\u00e9mon in the party has this ability, any random encounter with a Pok\u00e9mon five or more levels lower than it has a 50% chance of being skipped."
+            "description": "When this Pok\u00e9mon enters battle, the opponent's Attack is lowered by one stage.  In a double battle, both opponents are affected.\n\nThis ability also takes effect when acquired during a battle, but will not take effect again if lost and reobtained without leaving battle.\n\nThis ability has no effect on an opponent that has a substitute.\n\nOverworld: If the first Pok\u00e9mon in the party has this ability, any random encounter with a Pok\u00e9mon five or more levels lower than it has a 50% chance of being skipped."
         },
         {
-            "number": 23,
+            "id": 23,
             "name": "shadow-tag",
-            "effect": "While this Pok\u00e9mon is in battle, opposing Pok\u00e9mon cannot flee or switch out.\n\nOther Pok\u00e9mon with this ability are unaffected.  Pok\u00e9mon with run away can still flee.  Pok\u00e9mon can still switch out with the use of a move or item."
+            "description": "While this Pok\u00e9mon is in battle, opposing Pok\u00e9mon cannot flee or switch out.\n\nOther Pok\u00e9mon with this ability are unaffected.  Pok\u00e9mon with run away can still flee.  Pok\u00e9mon can still switch out with the use of a move or item."
         },
         {
-            "number": 24,
+            "id": 24,
             "name": "rough-skin",
-            "effect": "Whenever a move makes contact with this Pok\u00e9mon, the move's user takes 1/8 of its maximum HP in damage.\n\nThis ability functions identically to iron barbs."
+            "description": "Whenever a move makes contact with this Pok\u00e9mon, the move's user takes 1/8 of its maximum HP in damage.\n\nThis ability functions identically to iron barbs."
         },
         {
-            "number": 25,
+            "id": 25,
             "name": "wonder-guard",
-            "effect": "This Pok\u00e9mon is immune to damaging moves that are not super effective against it.\n\nMoves that inflict fixed damage, such as night shade or seismic toss, are considered super effective if their types are.  Damage not directly dealt by moves, such as damage from weather, a status ailment, or spikes, is not prevented.\n\nThis ability cannot be copied with role play or traded away with skill swap, but it can be copied with trace, disabled with gastro acid, or changed with worry seed.  This Pok\u00e9mon can still use Role Play itself to lose this ability, but not Skill Swap.\n\nIf this Pok\u00e9mon has a substitute, this ability will block moves as usual and any moves not blocked will react to the Substitute as usual."
+            "description": "This Pok\u00e9mon is immune to damaging moves that are not super effective against it.\n\nMoves that inflict fixed damage, such as night shade or seismic toss, are considered super effective if their types are.  Damage not directly dealt by moves, such as damage from weather, a status ailment, or spikes, is not prevented.\n\nThis ability cannot be copied with role play or traded away with skill swap, but it can be copied with trace, disabled with gastro acid, or changed with worry seed.  This Pok\u00e9mon can still use Role Play itself to lose this ability, but not Skill Swap.\n\nIf this Pok\u00e9mon has a substitute, this ability will block moves as usual and any moves not blocked will react to the Substitute as usual."
         }
     ],
     "moves": [
         {
-            "number": 1,
+            "id": 1,
             "name": "pound",
-            "power": 40,
+            "baseDamage": 40,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 35,
-            "effect": "Inflicts regular damage.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53263,14 +53263,14 @@
             }
         },
         {
-            "number": 2,
+            "id": 2,
             "name": "karate-chop",
-            "power": 50,
+            "baseDamage": 50,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 25,
-            "effect": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move.",
-            "moveType": "fighting",
+            "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move.",
+            "type": "fighting",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53278,14 +53278,14 @@
             }
         },
         {
-            "number": 3,
+            "id": 3,
             "name": "double-slap",
-            "power": 15,
+            "baseDamage": 15,
             "accuracy": 85,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 10,
-            "effect": "Inflicts regular damage.  Hits 2\u20135 times in one turn.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.  Hits 2\u20135 times in one turn.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53293,14 +53293,14 @@
             }
         },
         {
-            "number": 4,
+            "id": 4,
             "name": "comet-punch",
-            "power": 18,
+            "baseDamage": 18,
             "accuracy": 85,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 15,
-            "effect": "Inflicts regular damage.  Hits 2\u20135 times in one turn.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.  Hits 2\u20135 times in one turn.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53308,14 +53308,14 @@
             }
         },
         {
-            "number": 5,
+            "id": 5,
             "name": "mega-punch",
-            "power": 80,
+            "baseDamage": 80,
             "accuracy": 85,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 20,
-            "effect": "Inflicts regular damage.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53323,14 +53323,14 @@
             }
         },
         {
-            "number": 6,
+            "id": 6,
             "name": "pay-day",
-            "power": 40,
+            "baseDamage": 40,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 20,
-            "effect": "Inflicts regular damage.  After the battle ends, the winner receives five times the user's level in extra money for each time this move was used.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.  After the battle ends, the winner receives five times the user's level in extra money for each time this move was used.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53338,14 +53338,14 @@
             }
         },
         {
-            "number": 7,
+            "id": 7,
             "name": "fire-punch",
-            "power": 75,
+            "baseDamage": 75,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 15,
-            "effect": "Inflicts regular damage.  Has a $effect_chance% chance to burn the target.",
-            "moveType": "fire",
+            "description": "Inflicts regular damage.  Has a $effect_chance% chance to burn the target.",
+            "type": "fire",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53353,14 +53353,14 @@
             }
         },
         {
-            "number": 8,
+            "id": 8,
             "name": "ice-punch",
-            "power": 75,
+            "baseDamage": 75,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 15,
-            "effect": "Inflicts regular damage.  Has a $effect_chance% chance to freeze the target.",
-            "moveType": "ice",
+            "description": "Inflicts regular damage.  Has a $effect_chance% chance to freeze the target.",
+            "type": "ice",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53368,14 +53368,14 @@
             }
         },
         {
-            "number": 9,
+            "id": 9,
             "name": "thunder-punch",
-            "power": 75,
+            "baseDamage": 75,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 15,
-            "effect": "Inflicts regular damage.  Has a $effect_chance% chance to paralyze the target.",
-            "moveType": "electric",
+            "description": "Inflicts regular damage.  Has a $effect_chance% chance to paralyze the target.",
+            "type": "electric",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53383,14 +53383,14 @@
             }
         },
         {
-            "number": 10,
+            "id": 10,
             "name": "scratch",
-            "power": 40,
+            "baseDamage": 40,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 35,
-            "effect": "Inflicts regular damage.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53398,14 +53398,14 @@
             }
         },
         {
-            "number": 11,
+            "id": 11,
             "name": "vice-grip",
-            "power": 55,
+            "baseDamage": 55,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 30,
-            "effect": "Inflicts regular damage.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53413,14 +53413,14 @@
             }
         },
         {
-            "number": 12,
+            "id": 12,
             "name": "guillotine",
-            "power": null,
+            "baseDamage": null,
             "accuracy": 30,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 5,
-            "effect": "Inflicts damage equal to the target's max HP.  Ignores accuracy and evasion modifiers.  This move's accuracy is 30% plus 1% for each level the user is higher than the target.  If the user is a lower level than the target, this move will fail.\n\nBecause this move inflicts a specific and finite amount of damage, endure still prevents the target from fainting.\n\nThe effects of lock on, mind reader, and no guard still apply, as long as the user is equal or higher level than the target.  However, they will not give this move a chance to break through detect or protect.",
-            "moveType": "normal",
+            "description": "Inflicts damage equal to the target's max HP.  Ignores accuracy and evasion modifiers.  This move's accuracy is 30% plus 1% for each level the user is higher than the target.  If the user is a lower level than the target, this move will fail.\n\nBecause this move inflicts a specific and finite amount of damage, endure still prevents the target from fainting.\n\nThe effects of lock on, mind reader, and no guard still apply, as long as the user is equal or higher level than the target.  However, they will not give this move a chance to break through detect or protect.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53428,14 +53428,14 @@
             }
         },
         {
-            "number": 13,
+            "id": 13,
             "name": "razor-wind",
-            "power": 80,
+            "baseDamage": 80,
             "accuracy": 100,
-            "damage_class": "special",
+            "damageClass": "special",
             "pp": 10,
-            "effect": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move.  User charges for one turn before attacking.\n\nThis move cannot be selected by sleep talk.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move.  User charges for one turn before attacking.\n\nThis move cannot be selected by sleep talk.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "all-opponents",
@@ -53443,14 +53443,14 @@
             }
         },
         {
-            "number": 14,
+            "id": 14,
             "name": "swords-dance",
-            "power": null,
+            "baseDamage": null,
             "accuracy": null,
-            "damage_class": "status",
+            "damageClass": "status",
             "pp": 20,
-            "effect": "Raises the user's Attack by two stages.",
-            "moveType": "normal",
+            "description": "Raises the user's Attack by two stages.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "user",
@@ -53458,14 +53458,14 @@
             }
         },
         {
-            "number": 15,
+            "id": 15,
             "name": "cut",
-            "power": 50,
+            "baseDamage": 50,
             "accuracy": 95,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 30,
-            "effect": "Inflicts regular damage.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53473,14 +53473,14 @@
             }
         },
         {
-            "number": 16,
+            "id": 16,
             "name": "gust",
-            "power": 40,
+            "baseDamage": 40,
             "accuracy": 100,
-            "damage_class": "special",
+            "damageClass": "special",
             "pp": 35,
-            "effect": "Inflicts regular damage.\n\nIf the target is under the effect of bounce, fly, or sky drop, this move will hit with double power.",
-            "moveType": "flying",
+            "description": "Inflicts regular damage.\n\nIf the target is under the effect of bounce, fly, or sky drop, this move will hit with double power.",
+            "type": "flying",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53488,14 +53488,14 @@
             }
         },
         {
-            "number": 17,
+            "id": 17,
             "name": "wing-attack",
-            "power": 60,
+            "baseDamage": 60,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 35,
-            "effect": "Inflicts regular damage.",
-            "moveType": "flying",
+            "description": "Inflicts regular damage.",
+            "type": "flying",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53503,14 +53503,14 @@
             }
         },
         {
-            "number": 18,
+            "id": 18,
             "name": "whirlwind",
-            "power": null,
+            "baseDamage": null,
             "accuracy": null,
-            "damage_class": "status",
+            "damageClass": "status",
             "pp": 20,
-            "effect": "Switches the target out for another of its trainer's Pok\u00e9mon selected at random.  Wild battles end immediately.\n\nDoesn't affect Pok\u00e9mon with suction cups or under the effect of ingrain.",
-            "moveType": "normal",
+            "description": "Switches the target out for another of its trainer's Pok\u00e9mon selected at random.  Wild battles end immediately.\n\nDoesn't affect Pok\u00e9mon with suction cups or under the effect of ingrain.",
+            "type": "normal",
             "priority": -6,
             "target": {
                 "name": "selected-pokemon",
@@ -53518,14 +53518,14 @@
             }
         },
         {
-            "number": 19,
+            "id": 19,
             "name": "fly",
-            "power": 90,
+            "baseDamage": 90,
             "accuracy": 95,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 15,
-            "effect": "Inflicts regular damage.  User flies high into the air for one turn, becoming immune to attack, and hits on the second turn.\n\nDuring the immune turn, gust, hurricane, sky uppercut, smack down, thunder, twister, and whirlwind still hit the user normally.  gust and twister also have double power against the user.\n\nThe damage from hail and sandstorm still applies during the immune turn.\n\nThe user may be hit during its immune turn if under the effect of lock on, mind reader, or no guard.\n\nThis move cannot be used while gravity is in effect.\n\nThis move cannot be selected by sleep talk.",
-            "moveType": "flying",
+            "description": "Inflicts regular damage.  User flies high into the air for one turn, becoming immune to attack, and hits on the second turn.\n\nDuring the immune turn, gust, hurricane, sky uppercut, smack down, thunder, twister, and whirlwind still hit the user normally.  gust and twister also have double power against the user.\n\nThe damage from hail and sandstorm still applies during the immune turn.\n\nThe user may be hit during its immune turn if under the effect of lock on, mind reader, or no guard.\n\nThis move cannot be used while gravity is in effect.\n\nThis move cannot be selected by sleep talk.",
+            "type": "flying",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53533,14 +53533,14 @@
             }
         },
         {
-            "number": 20,
+            "id": 20,
             "name": "bind",
-            "power": 15,
+            "baseDamage": 15,
             "accuracy": 85,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 20,
-            "effect": "Inflicts regular damage.  For the next 2\u20135 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.  The user continues to use other moves during this time.  If the user leaves the field, this effect ends.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.\n\nrapid spin cancels this effect.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.  For the next 2\u20135 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.  The user continues to use other moves during this time.  If the user leaves the field, this effect ends.\n\nHas a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.\n\nrapid spin cancels this effect.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53548,14 +53548,14 @@
             }
         },
         {
-            "number": 21,
+            "id": 21,
             "name": "slam",
-            "power": 80,
+            "baseDamage": 80,
             "accuracy": 75,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 20,
-            "effect": "Inflicts regular damage.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53563,14 +53563,14 @@
             }
         },
         {
-            "number": 22,
+            "id": 22,
             "name": "vine-whip",
-            "power": 45,
+            "baseDamage": 45,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 25,
-            "effect": "Inflicts regular damage.",
-            "moveType": "grass",
+            "description": "Inflicts regular damage.",
+            "type": "grass",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53578,14 +53578,14 @@
             }
         },
         {
-            "number": 23,
+            "id": 23,
             "name": "stomp",
-            "power": 65,
+            "baseDamage": 65,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 20,
-            "effect": "Inflicts regular damage.  Has a $effect_chance% chance to make the target flinch.\n\nPower is doubled against Pok\u00e9mon that have used minimize since entering the field.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.  Has a $effect_chance% chance to make the target flinch.\n\nPower is doubled against Pok\u00e9mon that have used minimize since entering the field.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53593,14 +53593,14 @@
             }
         },
         {
-            "number": 24,
+            "id": 24,
             "name": "double-kick",
-            "power": 30,
+            "baseDamage": 30,
             "accuracy": 100,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 30,
-            "effect": "Inflicts regular damage.  Hits twice in one turn.",
-            "moveType": "fighting",
+            "description": "Inflicts regular damage.  Hits twice in one turn.",
+            "type": "fighting",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53608,14 +53608,14 @@
             }
         },
         {
-            "number": 25,
+            "id": 25,
             "name": "mega-kick",
-            "power": 120,
+            "baseDamage": 120,
             "accuracy": 75,
-            "damage_class": "physical",
+            "damageClass": "physical",
             "pp": 5,
-            "effect": "Inflicts regular damage.",
-            "moveType": "normal",
+            "description": "Inflicts regular damage.",
+            "type": "normal",
             "priority": 0,
             "target": {
                 "name": "selected-pokemon",
@@ -53625,7 +53625,7 @@
     ],
     "types": [
         {
-            "number": 1,
+            "idx": 1,
             "name": "normal",
             "typeDamageRelation": {
                 "doubleDamageTo": [],
@@ -53646,7 +53646,7 @@
             }
         },
         {
-            "number": 2,
+            "idx": 2,
             "name": "fighting",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53680,7 +53680,7 @@
             }
         },
         {
-            "number": 3,
+            "idx": 3,
             "name": "flying",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53710,7 +53710,7 @@
             }
         },
         {
-            "number": 4,
+            "idx": 4,
             "name": "poison",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53741,7 +53741,7 @@
             }
         },
         {
-            "number": 5,
+            "idx": 5,
             "name": "ground",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53773,7 +53773,7 @@
             }
         },
         {
-            "number": 6,
+            "idx": 6,
             "name": "rock",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53805,7 +53805,7 @@
             }
         },
         {
-            "number": 7,
+            "idx": 7,
             "name": "bug",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53837,7 +53837,7 @@
             }
         },
         {
-            "number": 8,
+            "idx": 8,
             "name": "ghost",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53865,7 +53865,7 @@
             }
         },
         {
-            "number": 9,
+            "idx": 9,
             "name": "steel",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53903,7 +53903,7 @@
             }
         },
         {
-            "number": 10,
+            "idx": 10,
             "name": "fire",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53936,7 +53936,7 @@
             }
         },
         {
-            "number": 11,
+            "idx": 11,
             "name": "water",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53964,7 +53964,7 @@
             }
         },
         {
-            "number": 12,
+            "idx": 12,
             "name": "grass",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -53999,7 +53999,7 @@
             }
         },
         {
-            "number": 13,
+            "idx": 13,
             "name": "electric",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -54026,7 +54026,7 @@
             }
         },
         {
-            "number": 14,
+            "idx": 14,
             "name": "psychic",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -54053,7 +54053,7 @@
             }
         },
         {
-            "number": 15,
+            "idx": 15,
             "name": "ice",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -54082,7 +54082,7 @@
             }
         },
         {
-            "number": 16,
+            "idx": 16,
             "name": "dragon",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -54109,7 +54109,7 @@
             }
         },
         {
-            "number": 17,
+            "idx": 17,
             "name": "dark",
             "typeDamageRelation": {
                 "doubleDamageTo": [
@@ -54137,7 +54137,7 @@
             }
         },
         {
-            "number": 18,
+            "idx": 18,
             "name": "fairy",
             "typeDamageRelation": {
                 "doubleDamageTo": [

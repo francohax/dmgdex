@@ -1,14 +1,17 @@
-import {Type} from "@/models/Type";
+import { Type } from './Type';
 
 export interface Move {
     id: number;
     name: string;
+    description: string;
     type: Type;
     baseDamage: number;
     accuracy: number;
     damageClass: MoveDamageClassificationEnum;
+    pp: number;
     priority: number;
-    effectFunction: string;
+    target: string;
+    effectFunction?: string;
 }
 
 export enum MoveDamageClassificationEnum {

@@ -1,4 +1,4 @@
-import {Stat} from "./Stats"
+import {Stat} from './Stats';
 
 export enum NatureEnum {
     BASHFUL,
@@ -28,7 +28,7 @@ export enum NatureEnum {
     NAIVE
 }
 
-export const NeutralNatures = [NatureEnum.BASHFUL, NatureEnum.DOCILE, NatureEnum.HARDY, NatureEnum.QUIRKY]
+export const NeutralNatures = [NatureEnum.BASHFUL, NatureEnum.DOCILE, NatureEnum.HARDY, NatureEnum.QUIRKY];
 
 export const NatureDefinitions = {
     ADMAMANT:   [Stat.ATK, Stat.SP_ATK],
@@ -55,5 +55,5 @@ export const NatureDefinitions = {
     HASTY:      [Stat.SPEED, Stat.DEF],
     JOLLY:      [Stat.SPEED, Stat.SP_ATK],
     NAIVE:      [Stat.SPEED, Stat.SP_DEF]
-}
+};
 

@@ -1,7 +1,12 @@
-export interface Type {
-    id: number;
+export class Type {
+    idx: number;
     name: string;
-    damageDefinition: TypeDamageDefinition;
+    damageDefinition?: TypeDamageDefinition;
+
+    constructor(idx: number, name: string) {
+      this.idx = idx;
+      this.name = name;
+    }
 }
 
 export interface TypeDamageDefinition {

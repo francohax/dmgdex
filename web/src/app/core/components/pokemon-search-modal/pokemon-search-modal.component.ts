@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../services/data/data.service'
+import { DataService } from '../../services/data/data.service';
+import {Pokemon} from '../../models/Pokemon';
 
 @Component({
   selector: 'app-pokemon-search-modal',
@@ -8,8 +9,8 @@ import { DataService } from '../../services/data/data.service'
 })
 export class PokemonSearchModalComponent implements OnInit {
 
-  pokemon: any;
-  displayMon: any;
+  pokemon: Array<Pokemon>;
+  displayMon: Pokemon;
 
   constructor(private dataService: DataService) {
     this.pokemon = this.dataService.getPokemonList();
@@ -19,8 +20,8 @@ export class PokemonSearchModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  setDisplayMon(pokemon: any) {
-    this.displayMon = pokemon
+  setDisplayMon(pokemon: Pokemon): void {
+    this.displayMon = pokemon;
   }
 
 }

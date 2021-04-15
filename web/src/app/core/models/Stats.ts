@@ -1,10 +1,10 @@
 export enum Stat {
-    HP = "HP",
-    ATK = "Attack",
-    DEF = "Defense",
-    SP_ATK = "Special Attack",
-    SP_DEF = "Special Defense",
-    SPEED = "Speed"
+    HP = 'HP',
+    ATK = 'Attack',
+    DEF = 'Defense',
+    SP_ATK = 'Special Attack',
+    SP_DEF = 'Special Defense',
+    SPEED = 'Speed'
 }
 
 export abstract class Stats {
@@ -13,15 +13,15 @@ export abstract class Stats {
         [Stat.ATK, 0], [Stat.DEF, 0],
         [Stat.SP_ATK, 0], [Stat.SP_DEF, 0],
         [Stat.SPEED, 0],
-    ])
+    ]);
 
     protected constructor(hp: number, atk: number, def: number, spAtk: number, spDef: number, speed: number) {
-        this.stats.set(Stat.HP, hp)
-        this.stats.set(Stat.ATK, atk)
-        this.stats.set(Stat.DEF, def)
-        this.stats.set(Stat.SP_ATK, spAtk)
-        this.stats.set(Stat.SP_DEF, spDef)
-        this.stats.set(Stat.SPEED, speed)
+        this.stats.set(Stat.HP, hp);
+        this.stats.set(Stat.ATK, atk);
+        this.stats.set(Stat.DEF, def);
+        this.stats.set(Stat.SP_ATK, spAtk);
+        this.stats.set(Stat.SP_DEF, spDef);
+        this.stats.set(Stat.SPEED, speed);
     }
 
     abstract validate(): boolean;
@@ -36,7 +36,9 @@ export class BaseStats extends Stats {
 
     validate(): boolean {
         for (const v of super.stats.values()) {
-            if (!v || v > 255 || v < 0) return false;
+            if (!v || v > 255 || v < 0) {
+              return false;
+            }
         }
         return true;
     }
@@ -49,7 +51,9 @@ export class IVStats extends Stats {
 
     validate(): boolean {
         for (const v of super.stats.values()) {
-            if (!v || v > 31 || v < 0) return false;
+            if (!v || v > 31 || v < 0) {
+              return false;
+            }
         }
         return true;
     }
@@ -61,10 +65,12 @@ export class EVStats extends Stats {
     }
 
     validate(): boolean {
-        let total = 0
+        let total = 0;
         for (const v of super.stats.values()) {
-            total += v
-            if (!v || v > 252 || v < 0) return false;
+            total += v;
+            if (!v || v > 252 || v < 0) {
+              return false;
+            }
         }
         return total < 510;
     }

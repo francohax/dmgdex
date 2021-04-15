@@ -1,24 +1,40 @@
-import {Type} from './Type';
-import {Move} from './Move';
-import {EVStats, IVStats, Stats} from './Stats';
-import {Ability} from './Ability';
-import {NatureEnum} from './NatureDefinition';
-import {Item} from './Item';
+import {BaseStats} from './Stats';
 
-export interface Pokemon {
+export class Pokemon {
     id: number;
     name: string;
-    typing: Type | [Type, Type];
-    moves: Array<Move>;
-    baseStats: Stats;
-    abilities: Array<Ability>;
+    typing: KeyNameList;
+    moves: KeyNameList;
+    stats: BaseStats;
+    abilities: KeyNameList;
+
+    constructor(id: number, name: string, typing: any[], moves: any[], baseStats: any, abilities: any[]) {
+      this.id = id;
+      this.name = name;
+      this.typing = new KeyNameList(typing);
+      this.moves = new KeyNameList(moves);
+      this.stats = new BaseStats(baseStats.hp, baseStats.atk, baseStats.def, baseStats.spAtk, baseStats.spDef, baseStats.speed);
+      this.abilities = new KeyNameList(abilities);
+    }
 }
 
-export interface SelectedPokemon extends Pokemon {
-    selectedMoves: Array<Move>;
-    ivs: IVStats;
-    evs: EVStats;
-    nature: NatureEnum;
-    ability: Ability;
-    item: Item;
+export class KeyName {
+  idx: number;
+  name: string;
+
+  constructor(idx: number, name: string) {
+    this.idx = idx;
+    this.name = name;
+  }
+}
+
+export class KeyNameList {
+  keyNamePairList: Array<KeyName>;
+
+  constructor(list: any[]) {
+    this.keyNamePairList = [];
+    for (const v of list) {
+      this.keyNamePairList.push(new KeyName(v.idx, v.name));
+    }
+  }
 }

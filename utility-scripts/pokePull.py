@@ -4,35 +4,35 @@ import re
 
 class Pokemon:
     def __init__(self, number, name, types, stats, abilities, moves):
-        self.number = number
+        self.id = number
         self.name = name
-        self.types = types
-        self.stats = stats
+        self.typing = types
+        self.baseStats = stats
         self.abilities = abilities
         self.moves = moves
 
 class Ability:
     def __init__(self, number, name, effect):
-        self.number = number
+        self.id = number
         self.name = name
-        self.effect = effect
+        self.description = effect
 
 class Move:
     def __init__(self, number, name, power, accuracy, damageClass, pp, effect, moveType, priority, target):
-        self.number = number
+        self.id = number
         self.name = name
-        self.power = power
+        self.baseDamage = power
         self.accuracy = accuracy
-        self.damage_class = damageClass
+        self.damageClass = damageClass
         self.pp = pp
-        self.effect = effect
-        self.moveType = moveType
+        self.description = effect
+        self.type = moveType
         self.priority = priority
         self.target = target
 
 class Type:
     def __init__(self, number, name, typeDamageRelation):
-        self.number = number
+        self.idx = number
         self.name = name
         self.typeDamageRelation = typeDamageRelation
 
@@ -109,7 +109,7 @@ for i in range(1, total_pokemon+1, +1):
                 buildKeyValueList(response, 'moves', 'move', ['move', 'url'], '(?<!v)\d*', True))
 
     dataset["pokemon"].append(p.__dict__)
-    print(f"fetched {p.number} - {p.name}")
+    print(f"fetched {p.id} - {p.name}")
 print("Pokemon fetch done...")
 
 dataset["abilities"] = []
@@ -121,7 +121,7 @@ for i in range(1, temp_total, +1):
                 response['effect_entries'][1]['effect'])
 
     dataset["abilities"].append(a.__dict__)
-    print(f"Fetched ability {a.number} - {a.name}")
+    print(f"Fetched ability {a.id} - {a.name}")
 print("Ability fetch done...")
 
 dataset['moves'] = []
@@ -140,7 +140,7 @@ for i in range(1, temp_total, +1):
              response['target'])
 
     dataset["moves"].append(m.__dict__)
-    print(f"Fetched move {m.number} - {m.name}")
+    print(f"Fetched move {m.id} - {m.name}")
 print("Move fetch done...")
 
 dataset["types"] = []
@@ -162,7 +162,7 @@ for i in range(1, 18+1, +1):
     t = Type(response['id'], response['name'], tdr.__dict__)
     dataset["types"].append(t.__dict__)
 
-    print(f"Fetched type {t.number} - {t.name}")
+    print(f"Fetched type {t.idx} - {t.name}")
 print("Type fetch done...")
 
 json_dump = json.dumps(dataset, indent = 4)

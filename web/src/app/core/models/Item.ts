@@ -1,4 +1,4 @@
-import {Type} from "@/models/Type"
+import {Type} from './Type';
 export interface Item {
     id: number;
     name: string;
