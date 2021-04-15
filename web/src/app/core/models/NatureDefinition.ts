@@ -31,7 +31,7 @@ export enum NatureEnum {
 export const NeutralNatures = [NatureEnum.BASHFUL, NatureEnum.DOCILE, NatureEnum.HARDY, NatureEnum.QUIRKY];
 
 export const NatureDefinitions = {
-    ADMAMANT:   [Stat.ATK, Stat.SP_ATK],
+    ADAMANT:   [Stat.ATK, Stat.SP_ATK],
     BRAVE:      [Stat.ATK, Stat.SPEED],
     LONELY:     [Stat.ATK, Stat.DEF],
     NAUGHTY:    [Stat.ATK, Stat.SP_DEF],

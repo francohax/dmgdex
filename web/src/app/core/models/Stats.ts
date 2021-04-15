@@ -29,9 +29,9 @@ export abstract class Stats {
 
 export class BaseStats extends Stats {
     baseTotal = 0;
-    constructor(hp: number, atk: number, def: number, spAtk: number, spDef: number, speed: number) {
-        super(hp, atk, def, spAtk, spDef, speed);
-        this.baseTotal = hp + atk + def + spAtk + spDef + speed;
+    constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
+        super(hp, attack, defense, specialAttack, specialDefense, speed);
+        this.baseTotal = hp + attack + defense + specialAttack + specialDefense + speed;
     }
 
     validate(): boolean {
@@ -45,8 +45,8 @@ export class BaseStats extends Stats {
 }
 
 export class IVStats extends Stats {
-    constructor(hp: number, atk: number, def: number, spAtk: number, spDef: number, speed: number) {
-        super(hp, atk, def, spAtk, spDef, speed);
+    constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
+        super(hp, attack, defense, specialAttack, specialDefense, speed);
     }
 
     validate(): boolean {
@@ -60,8 +60,8 @@ export class IVStats extends Stats {
 }
 
 export class EVStats extends Stats {
-    constructor(hp: number, atk: number, def: number, spAtk: number, spDef: number, speed: number) {
-        super(hp, atk, def, spAtk, spDef, speed);
+    constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
+        super(hp, attack, defense, specialAttack, specialDefense, speed);
     }
 
     validate(): boolean {
