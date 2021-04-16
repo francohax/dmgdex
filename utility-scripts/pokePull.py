@@ -32,7 +32,7 @@ class Move:
 
 class Type:
     def __init__(self, number, name, typeDamageRelation):
-        self.idx = number
+        self.id = number
         self.name = name
         self.typeDamageRelation = typeDamageRelation
 
@@ -56,12 +56,13 @@ def dig(obj, keys):
 
     return v
 
-def buildKeyValueList(items, listName, key, values, valueRe = "", invert = False):
+def buildReferenceList(items, listName, key, values, valueRe = "", invert = False):
     indexed = 'slot' in values or invert
     if indexed:
         kvList = []
     else:
         kvList = {}
+
     for i in items[listName]:
         k = i[key]["name"]
         v = dig(i, values)
@@ -76,12 +77,17 @@ def buildKeyValueList(items, listName, key, values, valueRe = "", invert = False
 
         if indexed:
             entry = {}
-            entry["idx"] = v
+            entry["referenceId"] = v
             entry["name"] = k
             kvList.append(entry)
         else:
-            kvList[k] = v
+            kvList[cleanStatString(k)] = v
     return kvList
+
+def cleanStatString(s):
+   res = ''.join(word.title() for word in s.split('-'))
+   res = res[:1].lower() + res[1:]
+   return res
 
 def buildTypeRelationship(damage_relations, key):
     l = []
@@ -103,10 +109,10 @@ for i in range(1, total_pokemon+1, +1):
 
     p = Pokemon(response['id'], \
                 response['name'], \
-                buildKeyValueList(response, 'types', 'type', ['slot']), \
-                buildKeyValueList(response, 'stats', 'stat', ['base_stat']), \
-                buildKeyValueList(response, 'abilities', 'ability', ['slot']), \
-                buildKeyValueList(response, 'moves', 'move', ['move', 'url'], '(?<!v)\d*', True))
+                buildReferenceList(response, 'types', 'type', ['slot']), \
+                buildReferenceList(response, 'stats', 'stat', ['base_stat']), \
+                buildReferenceList(response, 'abilities', 'ability', ['slot']), \
+                buildReferenceList(response, 'moves', 'move', ['move', 'url'], '(?<!v)\d*', True))
 
     dataset["pokemon"].append(p.__dict__)
     print(f"fetched {p.id} - {p.name}")
@@ -162,7 +168,7 @@ for i in range(1, 18+1, +1):
     t = Type(response['id'], response['name'], tdr.__dict__)
     dataset["types"].append(t.__dict__)
 
-    print(f"Fetched type {t.idx} - {t.name}")
+    print(f"Fetched type {t.id} - {t.name}")
 print("Type fetch done...")
 
 json_dump = json.dumps(dataset, indent = 4)

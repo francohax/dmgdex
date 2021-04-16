@@ -1,6 +1,6 @@
 import * as data from '../../../../assets/data/data.json';
 import {Injectable} from '@angular/core';
-import {Pokemon} from '../../models/Pokemon';
+import {BasePokemon} from '../../models/BasePokemon';
 
 @Injectable({
   providedIn: 'root'
@@ -9,10 +9,10 @@ export class DataService {
 
   constructor() { }
 
-  getPokemonList(): Array<Pokemon> {
+  getPokemonList(): Array<BasePokemon> {
     const pokemonList = [];
     for (const p of data.pokemon) {
-      pokemonList.push(new Pokemon(p.id, p.name, p.typing, p.moves, p.baseStats, p.abilities));
+      pokemonList.push(new BasePokemon(p.id, p.name, p.baseStats, p.typing, p.moves, p.abilities));
     }
     return pokemonList;
   }
