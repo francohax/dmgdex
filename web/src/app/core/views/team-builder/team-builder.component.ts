@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {PokemonSearchModalDialogComponent} from '../../components/pokemon-search-modal/pokemon-search-modal.component';
+import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import {PokemonSearchModalComponent} from '../../components/pokemon-search-modal/pokemon-search-modal.component';
 
 @Component({
   selector: 'app-team-builder',
@@ -20,7 +20,7 @@ export class TeamBuilderComponent implements OnInit {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(PokemonSearchModalDialogComponent);
+    const dialogRef = this.dialog.open(PokemonSearchModalComponent, { panelClass: 'custom-dialog-container' } );
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

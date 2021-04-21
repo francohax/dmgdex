@@ -25,14 +25,3 @@ export class PokemonSearchModalComponent implements OnInit {
     this.displayMon = pokemon;
   }
 }
-
-@Component({
-  selector: 'app-pokemon-search-model-dialog',
-  templateUrl: './pokemon-search-modal-dialog.html',
-})
-export class PokemonSearchModalDialogComponent {
-  constructor(public dialog: MatDialog) {
-  }
-
-
-}
