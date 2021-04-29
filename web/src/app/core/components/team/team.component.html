@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="team-node-list" *ngIf="team">
+    <app-team-node
+      *ngFor="let value of team; index as i"
+      (updateDisplayNodeEvent)="updateActivePokemon($event)"
+      [idx]="i"
+      [nodeMon]="value"
+      [isActive]="this.activeNodeIndex === i"
+    ></app-team-node>
+    <button class="btn" mat-flat-button (click)="openDialog()" *ngIf="team.length < 6">+</button>
+  </div>
+  <div class="info-block" *ngIf="activePokemon">
+    <img class="info-image" src="https://img.pokemondb.net/sprites/x-y/normal/{{activePokemon.name}}.png"
+         alt="{{activePokemon.name}}">
+  </div>
+</div>

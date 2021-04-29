@@ -1,12 +1,18 @@
 <div class="container">
-    <div class="quick-info-display">
-        <img class="pokemon-info-image" src="https://img.pokemondb.net/sprites/x-y/normal/{{displayMon.name}}.png" alt="{{displayMon.name}}">
+  <div class="quick-info-display">
+    <img class="quick-info-image" src="https://img.pokemondb.net/sprites/x-y/normal/{{selectedMon.name}}.png"
+         alt="{{selectedMon.name}}">
+    <div class="name-info">{{selectedMon.name}}</div>
+    <div class="stat-info">{{selectedMon.stats}}</div>
+    <div class="radar-graph">graph</div>
+  </div>
+  <div class="search-result-list">
+    <div class="pokemon-node" *ngFor="let value of pokemon" (mouseover)="setSelectedMon(value)" (click)="lockOn(value)">
+      <img class="pokemon-node-img"
+           src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/{{value.name}}.png"
+           alt="{{value.name}}">
+      <div style="text-transform: capitalize;">{{value.name}}</div>
     </div>
-    <div>Search Bar</div>
-    <div class="search-result-list">
-        <div class="pokemon-node" *ngFor="let value of pokemon" (mouseover)="setDisplayMon(value)">
-            <img class="pokemon-node-img" src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/{{value.name}}.png" alt="{{value.name}}">
-            <div style="text-transform: capitalize;">{{value.name}}</div>
-        </div>
-    </div>
+  </div>
+  <div class="actions"><button class="btn" mat-stroked-button (click)="save()">Save</button></div>
 </div>

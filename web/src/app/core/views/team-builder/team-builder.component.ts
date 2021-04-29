@@ -8,15 +8,9 @@ import {PokemonSearchModalComponent} from '../../components/pokemon-search-modal
   styleUrls: ['./team-builder.component.sass']
 })
 export class TeamBuilderComponent implements OnInit {
-  displaySearch = false;
-
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-  }
-
-  displaySearchModal(): void {
-    this.displaySearch = !this.displaySearch;
   }
 
   openDialog(): void {
