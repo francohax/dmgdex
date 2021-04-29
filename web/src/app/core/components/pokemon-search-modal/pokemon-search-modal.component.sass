@@ -1,60 +1,64 @@
-:host 
-    font-size: 0.6rem
-    color: white
+\:host
+  color: white
+  margin: 0
+  padding: 0
 
 $primary: #53087A
 $bg: #2A1A39
 $image-box-size: 3rem
 
 .container
-    display: flex
-    flex-direction: column
-
-    max-width: 50%
-    margin-left: 10%
-
-    background-color: $bg
-    border-radius: 2px
-    padding: 1rem
+  background-color: $bg
+  padding: 2em
 
 .search-result-list
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: center
-    align-items: flex-end
-
+  display: grid
+  grid-template-columns: repeat(20, auto [col-start])
+  overflow: hidden
+  padding: 2rem
 
 .pokemon-node
-    display: flex
-    flex-direction: column
-    align-items: center
+  display: flex
+  flex-direction: column
+  align-items: center
 
-    background-color: $primary
-    border-radius: 2px
-    margin: 1px 1px
+  font-size: 0.6rem
+  background-color: $primary
+  border-radius: 2px
+  margin: 1px 1px
 
-    cursor: pointer
-    transition: all 0.2s ease-in-out
+  cursor: pointer
+  transition: all 0.2s ease-in-out
 
-    &:hover
-       color: rgba(255, 255, 255, 1)
-       box-shadow: 0 5px 15px #5ac4df66 
+  &:hover
+    color: rgba(255, 255, 255, 1)
+    box-shadow: 0 5px 15px #5ac4df66
 
 .pokemon-node-img
-    height: $image-box-size
-    width: $image-box-size
-
-
+  height: $image-box-size
+  width: $image-box-size
 
 .quick-info-display
-    display: flex
-    align-items: center
+  display: grid
+  grid-template-columns: repeat(5, 1fr [col-start])
+  align-items: center
 
-    background-color: $primary
-    padding: 5px
+  background-color: $primary
+  padding: 1rem
+  border-radius: 5px
 
-.pokemon-info-image
-    background-color: $bg
-    border-radius: 100%
-    height: 5rem
+.quick-info-image
+  justify-self: flex-start
+  background-color: $bg
+  border-radius: 100%
+  height: 6rem
+  overflow: hidden
+
+.actions
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+
+.btn
+  background-color: #53087A
+  color: white

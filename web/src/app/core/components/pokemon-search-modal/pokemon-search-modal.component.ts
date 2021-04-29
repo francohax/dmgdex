@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../services/data/data.service';
+import {Component, OnInit} from '@angular/core';
+import {DataService} from '../../services/data/data.service';
 import {BasePokemon} from '../../models/BasePokemon';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-pokemon-search-modal',
@@ -10,18 +11,34 @@ import {BasePokemon} from '../../models/BasePokemon';
 export class PokemonSearchModalComponent implements OnInit {
 
   pokemon: Array<BasePokemon>;
-  displayMon: BasePokemon;
+  selectedMon: BasePokemon;
+  locked = false;
 
-  constructor(private dataService: DataService) {
+  constructor(public dialog: MatDialog, private dialigRef: MatDialogRef<PokemonSearchModalComponent>, private dataService: DataService) {
     this.pokemon = this.dataService.getPokemonList();
-    this.displayMon = this.pokemon[0];
+    this.selectedMon = this.pokemon[0];
   }
 
   ngOnInit(): void {
   }
 
-  setDisplayMon(pokemon: BasePokemon): void {
-    this.displayMon = pokemon;
+  setSelectedMon(pokemon: BasePokemon): void {
+    if (!this.locked) {
+      this.selectedMon = pokemon;
+    }
   }
 
+  lockOn(pokemon: BasePokemon): void {
+    const isSameMon = this.selectedMon === pokemon;
+    if (this.locked && isSameMon) {
+      this.locked = false;
+    } else {
+      this.selectedMon = pokemon;
+      this.locked = true;
+    }
+  }
+
+  save(): void {
+    this.dialigRef.close({data: this.selectedMon});
+  }
 }

@@ -4,7 +4,6 @@ import { TeamBuilderModule } from './views/team-builder/team-builder.module';
 import { HomeModule } from './views/home/home.module';
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
     TeamBuilderModule,
