@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {BasePokemon} from '../../models/BasePokemon';
+import {Pokemon} from '../../models/BasePokemon';
 import {PokemonSearchModalComponent} from '../pokemon-search-modal/pokemon-search-modal.component';
 import {MatDialog} from '@angular/material/dialog';
 
@@ -11,8 +11,9 @@ import {MatDialog} from '@angular/material/dialog';
 export class TeamComponent implements OnInit {
 
   activeNodeIndex?: number;
-  activePokemon?: BasePokemon;
-  team = new Array<BasePokemon>();
+  activePokemon?: Pokemon;
+  team = new Array<Pokemon>();
+
 
   constructor(public dialog: MatDialog) {
   }
@@ -29,11 +30,10 @@ export class TeamComponent implements OnInit {
     const dialogRef = this.dialog.open(PokemonSearchModalComponent, { panelClass: 'custom-dialog-container' } );
 
     dialogRef.afterClosed().subscribe(response => {
-      const data: BasePokemon = response.data;
+      const data: Pokemon = new Pokemon(response.data);
       this.team?.push(data);
       this.activePokemon = data;
       this.activeNodeIndex = this.team.length - 1;
     });
   }
-
 }

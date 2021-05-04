@@ -1,4 +1,4 @@
-import {Stat} from './Stats';
+import {StatEnum} from './Stats';
 
 export enum NatureEnum {
     BASHFUL,
@@ -31,29 +31,29 @@ export enum NatureEnum {
 export const NeutralNatures = [NatureEnum.BASHFUL, NatureEnum.DOCILE, NatureEnum.HARDY, NatureEnum.QUIRKY];
 
 export const NatureDefinitions = {
-    ADAMANT:   [Stat.ATK, Stat.SP_ATK],
-    BRAVE:      [Stat.ATK, Stat.SPEED],
-    LONELY:     [Stat.ATK, Stat.DEF],
-    NAUGHTY:    [Stat.ATK, Stat.SP_DEF],
+    ADAMANT:   [StatEnum.ATK, StatEnum.SP_ATK],
+    BRAVE:      [StatEnum.ATK, StatEnum.SPEED],
+    LONELY:     [StatEnum.ATK, StatEnum.DEF],
+    NAUGHTY:    [StatEnum.ATK, StatEnum.SP_DEF],
 
-    BOLD:       [Stat.DEF, Stat.ATK],
-    IMPISH:     [Stat.DEF, Stat.SP_ATK],
-    LAX:        [Stat.DEF, Stat.SP_DEF],
-    RELAXED:    [Stat.DEF, Stat.SPEED],
+    BOLD:       [StatEnum.DEF, StatEnum.ATK],
+    IMPISH:     [StatEnum.DEF, StatEnum.SP_ATK],
+    LAX:        [StatEnum.DEF, StatEnum.SP_DEF],
+    RELAXED:    [StatEnum.DEF, StatEnum.SPEED],
 
-    MODEST:     [Stat.SP_ATK, Stat.ATK],
-    MILD:       [Stat.SP_ATK, Stat.DEF],
-    RASH:       [Stat.SP_ATK, Stat.SP_DEF],
-    QUIET:      [Stat.SP_ATK, Stat.SPEED],
+    MODEST:     [StatEnum.SP_ATK, StatEnum.ATK],
+    MILD:       [StatEnum.SP_ATK, StatEnum.DEF],
+    RASH:       [StatEnum.SP_ATK, StatEnum.SP_DEF],
+    QUIET:      [StatEnum.SP_ATK, StatEnum.SPEED],
 
-    CALM:       [Stat.SP_DEF, Stat.ATK],
-    GENTLE:     [Stat.SP_DEF, Stat.DEF],
-    CAREFUL:    [Stat.SP_DEF, Stat.SP_ATK],
-    SASSY:      [Stat.SP_DEF, Stat.SPEED],
+    CALM:       [StatEnum.SP_DEF, StatEnum.ATK],
+    GENTLE:     [StatEnum.SP_DEF, StatEnum.DEF],
+    CAREFUL:    [StatEnum.SP_DEF, StatEnum.SP_ATK],
+    SASSY:      [StatEnum.SP_DEF, StatEnum.SPEED],
 
-    TIMID:      [Stat.SPEED, Stat.ATK],
-    HASTY:      [Stat.SPEED, Stat.DEF],
-    JOLLY:      [Stat.SPEED, Stat.SP_ATK],
-    NAIVE:      [Stat.SPEED, Stat.SP_DEF]
+    TIMID:      [StatEnum.SPEED, StatEnum.ATK],
+    HASTY:      [StatEnum.SPEED, StatEnum.DEF],
+    JOLLY:      [StatEnum.SPEED, StatEnum.SP_ATK],
+    NAIVE:      [StatEnum.SPEED, StatEnum.SP_DEF]
 };
 

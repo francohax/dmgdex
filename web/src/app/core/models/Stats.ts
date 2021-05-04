@@ -1,77 +1,200 @@
-export enum Stat {
-    HP = 'HP',
-    ATK = 'Attack',
-    DEF = 'Defense',
-    SP_ATK = 'Special Attack',
-    SP_DEF = 'Special Defense',
-    SPEED = 'Speed'
+export enum StatEnum {
+  HP = 'HP',
+  ATK = 'Atk',
+  DEF = 'Def',
+  SP_ATK = 'SpA',
+  SP_DEF = 'SpD',
+  SPEED = 'Spe'
+}
+
+export class Stat {
+  stat: string;
+  baseValue: number;
+  #_value: number;
+
+  constructor(statName: string, baseStatValue: number) {
+    this.stat = statName;
+    this.baseValue = baseStatValue;
+    this.#_value = 0;
+  }
+
+  get value(): number {
+    return this.#_value;
+  }
+
+  set value(value: number) {
+    this.#_value = value;
+  }
 }
 
 export abstract class Stats {
-    stats = new Map([
-        [Stat.HP, 0],
-        [Stat.ATK, 0], [Stat.DEF, 0],
-        [Stat.SP_ATK, 0], [Stat.SP_DEF, 0],
-        [Stat.SPEED, 0],
-    ]);
+  protected _hp: Stat;
+  protected _atk: Stat;
+  protected _def: Stat;
+  protected _spAtk: Stat;
+  protected _spDef: Stat;
+  protected _speed: Stat;
+  protected _total: number;
 
-    protected constructor(hp: number, atk: number, def: number, spAtk: number, spDef: number, speed: number) {
-        this.stats.set(Stat.HP, hp);
-        this.stats.set(Stat.ATK, atk);
-        this.stats.set(Stat.DEF, def);
-        this.stats.set(Stat.SP_ATK, spAtk);
-        this.stats.set(Stat.SP_DEF, spDef);
-        this.stats.set(Stat.SPEED, speed);
+  protected constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
+    this._total = hp + attack + defense + specialAttack + specialDefense + speed;
+    this._hp = new Stat(StatEnum.HP, hp);
+    this._atk = new Stat(StatEnum.ATK, attack);
+    this._def = new Stat(StatEnum.DEF, defense);
+    this._spAtk = new Stat(StatEnum.SP_ATK, specialAttack);
+    this._spDef = new Stat(StatEnum.SP_DEF, specialDefense);
+    this._speed = new Stat(StatEnum.SPEED, speed);
+  }
+
+  validate(): boolean {
+    return true;
+  }
+
+  getAsList(): Array<Stat> {
+    const stats = new Array<Stat>();
+    stats.push(this._hp);
+    stats.push(this._atk);
+    stats.push(this._def);
+    stats.push(this._spAtk);
+    stats.push(this._spDef);
+    stats.push(this._speed);
+
+    return stats;
+  }
+
+  setByName(stat: string, value: number): void {
+    this.getByName(stat).value = value;
+  }
+
+  getByName(stat: string): Stat {
+    switch (stat) {
+      case StatEnum.HP.valueOf():
+        return this.hp;
+      case StatEnum.ATK.valueOf():
+        return this.atk;
+      case StatEnum.DEF.valueOf():
+        return this.def;
+      case StatEnum.SP_ATK.valueOf():
+        return this.spAtk;
+      case StatEnum.SP_DEF.valueOf():
+        return this.spDef;
+      case StatEnum.SPEED.valueOf():
+        return this.speed;
     }
+    return new Stat('', 0);
+  }
 
-    abstract validate(): boolean;
+  getByDefinition(stat: StatEnum): Stat {
+    return this.getByName(stat.valueOf());
+  }
+
+  getCurrentTotal(): number {
+    let total = 0;
+    for (const s of this.getAsList()) {
+      total += s.value;
+    }
+    return total;
+  }
+
+  get hp(): Stat {
+    return this._hp;
+  }
+
+  set hp(value: Stat) {
+    this._hp = value;
+  }
+
+  get atk(): Stat {
+    return this._atk;
+  }
+
+  set atk(value: Stat) {
+    this._atk = value;
+  }
+
+  get def(): Stat {
+    return this._def;
+  }
+
+  set def(value: Stat) {
+    this._def = value;
+  }
+
+  get spAtk(): Stat {
+    return this._spAtk;
+  }
+
+  set spAtk(value: Stat) {
+    this._spAtk = value;
+  }
+
+  get spDef(): Stat {
+    return this._spDef;
+  }
+
+  set spDef(value: Stat) {
+    this._spDef = value;
+  }
+
+  get speed(): Stat {
+    return this._speed;
+  }
+
+  set speed(value: Stat) {
+    this._speed = value;
+  }
+
+  get total(): number {
+    return this._total;
+  }
+
+  set total(value: number) {
+    this._total = value;
+  }
+
+  abstract apply(value: number, stat: StatEnum): void;
 }
 
 export class BaseStats extends Stats {
-    baseTotal = 0;
-    constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
-        super(hp, attack, defense, specialAttack, specialDefense, speed);
-        this.baseTotal = hp + attack + defense + specialAttack + specialDefense + speed;
-    }
+  constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
+    super(hp, attack, defense, specialAttack, specialDefense, speed);
+  }
 
-    validate(): boolean {
-        for (const v of super.stats.values()) {
-            if (!v || v > 255 || v < 0) {
-              return false;
-            }
-        }
-        return true;
+  apply(value: number, stat: StatEnum): void {
+    if (value > 255 || value < 0) {
+      return;
     }
+    const s = this.getByDefinition(stat);
+    s.value = value;
+  }
 }
 
-export class IVStats extends Stats {
-    constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
-        super(hp, attack, defense, specialAttack, specialDefense, speed);
-    }
+export const dummyBaseStats = new BaseStats(100, 100, 100, 100, 100, 100);
 
-    validate(): boolean {
-        for (const v of super.stats.values()) {
-            if (!v || v > 31 || v < 0) {
-              return false;
-            }
-        }
-        return true;
+export class EffortValues extends Stats {
+  constructor() {
+    super(0, 0, 0, 0, 0, 0);
+  }
+
+  apply(value: number, stat: StatEnum): void {
+    if (value > 252 || value < 0) {
+      return;
     }
+    const s = this.getByDefinition(stat);
+    s.value = value;
+  }
 }
 
-export class EVStats extends Stats {
-    constructor(hp: number, attack: number, defense: number, specialAttack: number, specialDefense: number, speed: number) {
-        super(hp, attack, defense, specialAttack, specialDefense, speed);
-    }
+export class IndividualValues extends Stats {
+  constructor() {
+    super(31, 31, 31, 31, 31, 31);
+  }
 
-    validate(): boolean {
-        let total = 0;
-        for (const v of super.stats.values()) {
-            total += v;
-            if (!v || v > 252 || v < 0) {
-              return false;
-            }
-        }
-        return total < 510;
+  apply(value: number, stat: StatEnum): void {
+    if (value > 31 || value < 0) {
+      return;
     }
+    const s = this.getByDefinition(stat);
+    s.value = value;
+  }
 }

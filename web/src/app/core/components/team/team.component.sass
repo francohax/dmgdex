@@ -1,36 +1,40 @@
+@import 'src/assets/styles/utility-classes'
+@import 'src/assets/styles/constants'
 .container
   min-width: 30rem
-  height: 65vh
   padding: 10px
 
-  border: #53087A 1px solid
-  border-radius: 5px
+  @extend .secondary-panel
+  display: block
+  font-size: 0.8rem
 
 .team-node-list
   display: flex
   flex-direction: row
   gap: 1rem
 
-.btn
-  width: 100%
-  background-color: #53087A
-  color: #81BDE0
-
-.info-block
-  display: flex
-  align-items: center
-  justify-content: space-around
-
-  margin-top: 1rem
-  padding: 10px
-  color: white
+.display
   height: 30%
-
-  border: #81BDE0 1px solid
-  border-radius: 5px
-  background-color: inherit
+  @extend .primary-panel
+  justify-content: space-around
 
   .info-image
     height: 6rem
     overflow: hidden
 
+.details
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.stat-list
+  font-size: 0.6rem
+  min-width: 60%
+
+.stat-item
+  margin: 1px
+  font-size: 0.8rem
+
+ul
+  list-style-type: none
+  padding: 0

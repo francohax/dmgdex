@@ -31,7 +31,7 @@ export class PokemonSearchModalComponent implements OnInit {
   lockOn(pokemon: BasePokemon): void {
     const isSameMon = this.selectedMon === pokemon;
     if (this.locked && isSameMon) {
-      this.locked = false;
+      this.save();
     } else {
       this.selectedMon = pokemon;
       this.locked = true;

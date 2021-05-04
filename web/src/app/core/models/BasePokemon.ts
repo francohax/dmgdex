@@ -1,4 +1,5 @@
-import {BaseStats} from './Stats';
+import {BaseStats, dummyBaseStats, EffortValues, IndividualValues, Stats} from './Stats';
+import {Move} from './Move';
 
 export class BasePokemon {
   id: number;
@@ -18,23 +19,56 @@ export class BasePokemon {
   }
 }
 
+export class Pokemon extends BasePokemon {
+  evs: EffortValues = new EffortValues();
+  ivs: IndividualValues = new IndividualValues();
+  selectedMoves: Array<Move> = new Array<Move>();
+
+  constructor(base: BasePokemon) {
+    super(base.id, base.name, base.stats, base.typing.keyNamePairList, base.moves.keyNamePairList, base.abilities.keyNamePairList);
+  }
+}
+
 export class ReferenceKeyName {
-  key: number;
-  name: string;
+  get name(): string {
+    return this._name;
+  }
+
+  set name(value: string) {
+    this._name = value;
+  }
+  get key(): number {
+    return this._key;
+  }
+
+  set key(value: number) {
+    this._key = value;
+  }
+  private _key: number;
+  private _name: string;
 
   constructor(key: number, name: string) {
-    this.key = key;
-    this.name = name;
+    this._key = key;
+    this._name = name;
   }
 }
 
 export class ReferenceList {
-  keyNamePairList: Array<ReferenceKeyName>;
+  get keyNamePairList(): Array<ReferenceKeyName> {
+    return this._keyNamePairList;
+  }
+
+  set keyNamePairList(value: Array<ReferenceKeyName>) {
+    this._keyNamePairList = value;
+  }
+  private _keyNamePairList: Array<ReferenceKeyName>;
 
   constructor(list: any[]) {
-    this.keyNamePairList = [];
+    this._keyNamePairList = [];
     for (const v of list) {
-      this.keyNamePairList.push(new ReferenceKeyName(v.idx, v.name));
+      this._keyNamePairList.push(new ReferenceKeyName(v.idx, v.name));
     }
   }
 }
+
+export const dummyBasePokemon = new BasePokemon(-1, 'Missingno', dummyBaseStats, ['normal'], ['tackle'], ['torrent']);

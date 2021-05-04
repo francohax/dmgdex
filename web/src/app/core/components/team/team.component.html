@@ -7,10 +7,33 @@
       [nodeMon]="value"
       [isActive]="this.activeNodeIndex === i"
     ></app-team-node>
-    <button class="btn" mat-flat-button (click)="openDialog()" *ngIf="team.length < 6">+</button>
+    <button class="btn" mat-flat-button (click)="openDialog()" *ngIf="team.length < 6">Add</button>
   </div>
-  <div class="info-block" *ngIf="activePokemon">
-    <img class="info-image" src="https://img.pokemondb.net/sprites/x-y/normal/{{activePokemon.name}}.png"
-         alt="{{activePokemon.name}}">
+
+  <div class="display center-align top-margin-1" *ngIf="activePokemon">
+    <div class="details">
+      <img class="info-image" src="https://img.pokemondb.net/sprites/x-y/normal/{{activePokemon.name}}.png"
+           alt="{{activePokemon.name}}">
+      <div class="info">
+        <div class="name">{{activePokemon.name}}</div>
+        <div class="typing">{{activePokemon.typing}}</div>
+      </div>
+    </div>
+    <div class="stat-list">
+      <ul>
+        <li class="stat-item flex" *ngFor="let value of activePokemon.stats.getAsList()">
+          <div>{{ value.stat }}</div>
+          <div>{{ value.value }}</div>
+        </li>
+      </ul>
+    </div>
   </div>
+
+  <div class="base-config top-margin-1" *ngIf="activePokemon">
+
+  </div>
+
+  <div class="line top-margin-1" *ngIf="activePokemon"></div>
+  <app-config-panel-container class="top-margin-1" [activePokemon]="activePokemon"></app-config-panel-container>
+
 </div>

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="rows" *ngFor="let value of activePokemon.evs.getAsList()">
+    <div class="row-item">{{value.stat}}</div>
+    <div class="row-item">{{value.baseValue}}</div>
+    <mat-slider
+      step="4"
+      min="0"
+      max="252"
+      aria-label="units"
+      (input)="updateValues($event, activePokemon.stats, value.stat)"
+      [value]="value.value"></mat-slider>
+    <div class="row-item">{{value.value}}</div>
+  </div>
+</div>

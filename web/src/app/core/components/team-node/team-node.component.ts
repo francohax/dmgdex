@@ -27,9 +27,10 @@ export class TeamNodeComponent implements OnInit {
   }
 
   onClick(): void {
-    if (this.nodeMon) {
+    if (!this.nodeMon) { return; }
+    if (!this.isActive) {
       this.isActive = !this.isActive;
-      this.updateDisplayNodeEvent.emit(this.idx);
     }
+    this.updateDisplayNodeEvent.emit(this.idx);
   }
 }

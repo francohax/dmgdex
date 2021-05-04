@@ -1,0 +1,12 @@
+<div class="container" *ngIf="activePokemon">
+  <div class="config-menu top-margin-1">
+    <button class="btn config-menu-item" mat-flat-button (click)="toggleConfigPanelDisplay()">^</button>
+    <button class="btn config-menu-item" mat-flat-button *ngFor="let item of menuItems" (click)="updateDisplayPanel(item)">{{ item.valueOf() }}</button>
+  </div>
+  <div class="secondary-panel flex-col">
+    <app-move-config-panel *ngIf="activePanel === PanelTypes.MOVE"></app-move-config-panel>
+    <app-ev-config-panel [activePokemon]="activePokemon" *ngIf="activePanel === PanelTypes.EVS"></app-ev-config-panel>
+    <app-iv-config-panel *ngIf="activePanel === PanelTypes.IVS"></app-iv-config-panel>
+  </div>
+
+</div>

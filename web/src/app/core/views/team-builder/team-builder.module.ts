@@ -8,18 +8,27 @@ import {TeamComponent} from '../../components/team/team.component';
 import {TeamNodeComponent} from '../../components/team-node/team-node.component';
 import {TargetsComponent} from '../../components/targets/targets.component';
 import {TargetNodeComponent} from '../../components/target-node/target-node.component';
+import {MatSliderModule} from '@angular/material/slider';
+import {FormsModule} from '@angular/forms';
+import {ConfigPanelContainerComponent} from '../../components/config-panel/config-panel-container/config-panel-container.component';
+import {MoveConfigPanelComponent} from '../../components/config-panel/move-config-panel/move-config-panel.component';
+import {EvConfigPanelComponent} from '../../components/config-panel/ev-config-panel/ev-config-panel.component';
+import {IvConfigPanelComponent} from '../../components/config-panel/iv-config-panel/iv-config-panel.component';
 
 @NgModule({
   declarations: [
     TeamBuilderComponent, PokemonSearchModalComponent, PokemonCardComponent,
-    TeamComponent, TeamNodeComponent, TargetsComponent, TargetNodeComponent
+    TeamComponent, TeamNodeComponent, TargetsComponent, TargetNodeComponent,
+    ConfigPanelContainerComponent, MoveConfigPanelComponent, EvConfigPanelComponent, IvConfigPanelComponent
   ],
   exports: [
     TeamComponent
   ],
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSliderModule,
+    FormsModule
   ]
 })
 export class TeamBuilderModule {
