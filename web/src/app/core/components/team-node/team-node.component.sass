@@ -1,13 +1,18 @@
+@use 'src/assets/styles/utility-classes' as util
+@use 'src/assets/styles/constants' as c
+
 .container
   display: flex
 
 .btn
-  background-color: #53087A
+  background-color: c.$deep-purple
+  border: c.$primary-color 1px solid
   &:hover
-    border-bottom: #81BDE0 1px solid
+    border: c.$primary-color 1px solid
 
 .active-node
-  background-color: #81BDE0
+  background-color: c.$indigo
+  border: c.$accent 1px solid
 
 .pokemon-node-img
   max-height: 2rem

@@ -1,9 +1,10 @@
+@use "src/assets/styles/constants" as c
 .container
-  display: grid
-  grid-template-columns: repeat(3, 1fr [col-start])
+  display: flex
+  flex-grow: 1
+  gap: 1rem
   color: white
-
 .vertical-spacer
-  border-left: thick solid #81BDE0
+  border-left: thick solid c.$accent
   height: 100%
   padding-left: 10px

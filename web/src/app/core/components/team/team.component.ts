@@ -14,7 +14,6 @@ export class TeamComponent implements OnInit {
   activePokemon?: Pokemon;
   team = new Array<Pokemon>();
 
-
   constructor(public dialog: MatDialog) {
   }
 
@@ -31,7 +30,10 @@ export class TeamComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(response => {
       const data: Pokemon = new Pokemon(response.data);
-      this.team?.push(data);
+      const teamContains = this.team.some(p => p.id === data.id);
+      if (!teamContains) {
+        this.team?.push(data);
+      }
       this.activePokemon = data;
       this.activeNodeIndex = this.team.length - 1;
     });

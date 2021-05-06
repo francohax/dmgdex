@@ -1,10 +1,11 @@
-@import 'src/assets/styles/utility-classes'
-@import 'src/assets/styles/constants'
+@use 'src/assets/styles/utility-classes' as util
+@use 'src/assets/styles/constants' as c
 .container
-  min-width: 30rem
+  width: 32rem
   padding: 10px
 
   @extend .secondary-panel
+  background-color: c.$deep-purple
   display: block
   font-size: 0.8rem
 
