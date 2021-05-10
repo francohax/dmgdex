@@ -1,4 +1,4 @@
-import {EventEmitter, Input, Output} from '@angular/core';
+import {EventEmitter} from '@angular/core';
 import {Pokemon} from '../../models/BasePokemon';
 import {Stats} from '../../models/Stats';
 
