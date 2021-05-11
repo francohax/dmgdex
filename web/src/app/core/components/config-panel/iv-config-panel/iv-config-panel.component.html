@@ -1,7 +1,7 @@
 <div class="container">
   <div class="rows" *ngFor="let kv of activePokemon.ivs.stats | keyvalue">
-    <div class="row-item">{{activePokemon.baseStats.stats.get(kv.key)}}</div>
     <div class="row-item">{{kv.key}}</div>
+    <div class="row-item">{{activePokemon.baseStats.stats.get(kv.key)}}</div>
     <mat-slider
       step="1"
       min="0"

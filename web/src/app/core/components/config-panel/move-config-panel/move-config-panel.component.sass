@@ -1,8 +1,5 @@
 @use 'src/assets/styles/utility-classes' as util
 
-.container
-  flex-grow: 1
-
 .flex-col
   display: flex
   flex-direction: column
@@ -15,7 +12,7 @@
   justify-content: center
   flex-wrap: wrap
   gap: 1px
-  margin: 2rem 0
+  margin: 1rem 0
 
 .move-node
   text-align: center
@@ -35,8 +32,9 @@
 
 .calc
   @extend .secondary-panel
-  width: 32em
   background-color: util.$deep-purple
   color: util.$platinum
+  width: 33em
   height: 2rem
+  margin-top: 1rem
 
