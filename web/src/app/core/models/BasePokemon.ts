@@ -1,10 +1,10 @@
-import {BaseStats, dummyBaseStats, EffortValues, IndividualValues, Stats} from './Stats';
+import {BaseStats, dummyBaseStats, EffortValues, IndividualValues} from './Stats';
 import {Move} from './Move';
 
 export class BasePokemon {
   id: number;
   name: string;
-  stats: BaseStats;
+  baseStats: BaseStats;
   typing: ReferenceList;
   moves: ReferenceList;
   abilities: ReferenceList;
@@ -12,7 +12,7 @@ export class BasePokemon {
   constructor(id: number, name: string, baseStats: any, typing: any[], moves: any[], abilities: any[]) {
     this.id = id;
     this.name = name;
-    this.stats = new BaseStats(baseStats.hp, baseStats.atk, baseStats.def, baseStats.spAtk, baseStats.spDef, baseStats.speed);
+    this.baseStats = baseStats;
     this.typing = new ReferenceList(typing);
     this.moves = new ReferenceList(moves);
     this.abilities = new ReferenceList(abilities);
@@ -20,12 +20,14 @@ export class BasePokemon {
 }
 
 export class Pokemon extends BasePokemon {
-  evs: EffortValues = new EffortValues();
-  ivs: IndividualValues = new IndividualValues();
+  evs: EffortValues;
+  ivs: IndividualValues;
   selectedMoves: Array<Move> = new Array<Move>();
 
   constructor(base: BasePokemon) {
-    super(base.id, base.name, base.stats, base.typing.keyNamePairList, base.moves.keyNamePairList, base.abilities.keyNamePairList);
+    super(base.id, base.name, base.baseStats, base.typing.keyNamePairList, base.moves.keyNamePairList, base.abilities.keyNamePairList);
+    this.evs = new EffortValues();
+    this.ivs = new IndividualValues();
   }
 }
 

@@ -7,7 +7,7 @@
       [nodeMon]="value"
       [isActive]="this.activeNodeIndex === i"
     ></app-team-node>
-    <button class="btn" mat-flat-button (click)="openDialog()" *ngIf="team.length < 6">Add</button>
+    <button class="btn" mat-flat-button (click)="openSearch()" *ngIf="team.length < 6">Add</button>
   </div>
 
   <div class="display center-align top-margin-1" *ngIf="activePokemon">
@@ -23,9 +23,9 @@
     </div>
     <div class="stat-list">
       <ul>
-        <li class="stat-item flex" *ngFor="let value of activePokemon.stats.getAsList()">
-          <div>{{ value.stat }}</div>
-          <div>{{ value.value }}</div>
+        <li class="stat-item flex" *ngFor="let kv of activePokemon.baseStats.stats | keyvalue">
+          <div>{{ kv.key }}</div>
+          <div>{{ kv.value }}</div>
         </li>
       </ul>
     </div>
@@ -37,5 +37,4 @@
 
   <div class="line top-margin-1" *ngIf="activePokemon"></div>
   <app-config-panel-container class="top-margin-1" [activePokemon]="activePokemon"></app-config-panel-container>
-
 </div>

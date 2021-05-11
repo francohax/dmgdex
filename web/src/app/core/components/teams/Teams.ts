@@ -1,23 +1,40 @@
-import {Component, OnInit} from '@angular/core';
 import {Pokemon} from '../../models/BasePokemon';
+import {EventEmitter} from '@angular/core';
 import {PokemonSearchModalComponent} from '../pokemon-search-modal/pokemon-search-modal.component';
 import {MatDialog} from '@angular/material/dialog';
 
-@Component({
-  selector: 'app-team',
-  templateUrl: './team.component.html',
-  styleUrls: ['./team.component.sass']
-})
-export class TeamComponent implements OnInit {
+export enum TeamDefinition {
+  PLAYER = 'player',
+  OPPONENT = 'opponent'
+}
+
+export interface Team {
+  definition: TeamDefinition;
+  team: Array<Pokemon>;
+  dirtyEvent: EventEmitter<boolean>;
+
+  isDirty(): void;
+  openSearch(): void;
+  updateActivePokemon(index: number): void;
+}
+
+export class AbstractTeam implements Team {
+  definition: TeamDefinition;
+  team = new Array<Pokemon>();
+  dirtyEvent = new EventEmitter<boolean>();
 
   activeNodeIndex?: number;
   activePokemon?: Pokemon;
-  team = new Array<Pokemon>();
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, definition: TeamDefinition) {
+    this.definition = definition;
   }
 
-  ngOnInit(): void {
+  isDirty(): void {
+    const dirty = this.team.length > 0;
+    if (this.team.length === 1) {
+      this.dirtyEvent.emit(dirty);
+    }
   }
 
   updateActivePokemon(index: number): void {
@@ -25,7 +42,7 @@ export class TeamComponent implements OnInit {
     this.activePokemon = this.team[this.activeNodeIndex];
   }
 
-  openDialog(): void {
+  openSearch(): void {
     const dialogRef = this.dialog.open(PokemonSearchModalComponent, { panelClass: 'custom-dialog-container' } );
 
     dialogRef.afterClosed().subscribe(response => {

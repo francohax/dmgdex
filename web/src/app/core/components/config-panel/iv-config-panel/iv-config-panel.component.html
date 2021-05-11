@@ -1,14 +1,14 @@
 <div class="container">
-  <div class="rows" *ngFor="let value of activePokemon.evs.getAsList()">
-    <div class="row-item">{{value.stat}}</div>
-    <div class="row-item">{{value.baseValue}}</div>
+  <div class="rows" *ngFor="let kv of activePokemon.ivs.stats | keyvalue">
+    <div class="row-item">{{kv.key}}</div>
+    <div class="row-item">{{activePokemon.baseStats.stats.get(kv.key)}}</div>
     <mat-slider
-      step="4"
+      step="1"
       min="0"
-      max="252"
+      max="31"
       aria-label="units"
-      (input)="updateValues($event, activePokemon.stats, value.stat)"
-      [value]="value.value"></mat-slider>
-    <div class="row-item">{{value.value}}</div>
+      (input)="updateValues($event, activePokemon.ivs, kv.key)"
+      [value]="kv.value"></mat-slider>
+    <div class="row-item">{{kv.value}}</div>
   </div>
 </div>
