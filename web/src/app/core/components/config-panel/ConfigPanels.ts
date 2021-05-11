@@ -1,6 +1,6 @@
 import {EventEmitter} from '@angular/core';
 import {Pokemon} from '../../models/BasePokemon';
-import {Stats} from '../../models/Stats';
+import {StatEnum, Stats} from '../../models/Stats';
 
 export enum ConfigPanelDefinition {
   MOVE = 'Moves',
@@ -24,5 +24,5 @@ export abstract class AbstractConfigPanel implements ConfigPanel {
     this.definition = definition;
   }
 
-  abstract updateValues<T extends Stats>(event: any, stats: T, stat: string): void;
+  abstract updateValues<T extends Stats>(event: any, stats: T, stat: StatEnum): void;
 }

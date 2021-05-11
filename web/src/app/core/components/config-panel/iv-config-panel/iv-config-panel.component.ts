@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {AbstractConfigPanel, ConfigPanelDefinition} from '../ConfigPanels';
 import {dummyBasePokemon, Pokemon} from '../../../models/BasePokemon';
-import {Stats} from '../../../models/Stats';
+import {StatEnum, Stats} from '../../../models/Stats';
 
 @Component({
   selector: 'app-iv-config-panel',
@@ -22,7 +22,12 @@ export class IvConfigPanelComponent extends AbstractConfigPanel implements OnIni
   ngOnInit(): void {
   }
 
-  updateValues<T extends Stats>(event: any, stats: T, stat: string): void {
-    console.log(typeof stats);
+  updateValues<T extends Stats>(event: any, stats: T, stat: StatEnum): void {
+    if (!this.activePokemon) {
+      return;
+    }
+
+    this.activePokemon.ivs.stats.set(stat, event.value);
+    this.updateEvent.emit(this.activePokemon);
   }
 }

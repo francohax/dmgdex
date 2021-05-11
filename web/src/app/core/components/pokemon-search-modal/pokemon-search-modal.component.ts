@@ -14,7 +14,7 @@ export class PokemonSearchModalComponent implements OnInit {
   selectedMon: BasePokemon;
   locked = false;
 
-  constructor(public dialog: MatDialog, private dialigRef: MatDialogRef<PokemonSearchModalComponent>, private dataService: DataService) {
+  constructor(public dialog: MatDialog, private dialogRef: MatDialogRef<PokemonSearchModalComponent>, private dataService: DataService) {
     this.pokemon = this.dataService.getPokemonList();
     this.selectedMon = this.pokemon[0];
   }
@@ -25,6 +25,7 @@ export class PokemonSearchModalComponent implements OnInit {
   setSelectedMon(pokemon: BasePokemon): void {
     if (!this.locked) {
       this.selectedMon = pokemon;
+      console.log(this.selectedMon.baseStats);
     }
   }
 
@@ -39,6 +40,6 @@ export class PokemonSearchModalComponent implements OnInit {
   }
 
   save(): void {
-    this.dialigRef.close({data: this.selectedMon});
+    this.dialogRef.close({data: this.selectedMon});
   }
 }
