@@ -55,3 +55,9 @@ export class IndividualValues extends Stats {
     super(31, 31, 31, 31, 31, 31);
   }
 }
+
+export class RealValues extends Stats {
+  constructor() {
+    super(0, 0, 0, 0, 0, 0);
+  }
+}

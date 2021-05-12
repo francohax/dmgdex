@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AbstractTeam, TeamDefinition} from '../Teams';
 import {MatDialog} from '@angular/material/dialog';
+import {StatCalculationService} from '../../../services/stat-calculation/stat-calculation.service';
 
 @Component({
   selector: 'app-player-team',
@@ -9,8 +10,8 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class PlayerTeamComponent extends AbstractTeam implements OnInit {
 
-  constructor(dialog: MatDialog) {
-    super(dialog, TeamDefinition.PLAYER);
+  constructor(dialog: MatDialog, statService: StatCalculationService) {
+    super(dialog, statService, TeamDefinition.PLAYER);
   }
 
   ngOnInit(): void {

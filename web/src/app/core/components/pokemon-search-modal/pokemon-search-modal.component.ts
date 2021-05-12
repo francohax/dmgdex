@@ -25,7 +25,6 @@ export class PokemonSearchModalComponent implements OnInit {
   setSelectedMon(pokemon: BasePokemon): void {
     if (!this.locked) {
       this.selectedMon = pokemon;
-      console.log(this.selectedMon.baseStats);
     }
   }
 
