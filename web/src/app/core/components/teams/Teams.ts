@@ -3,14 +3,10 @@ import {EventEmitter} from '@angular/core';
 import {PokemonSearchModalComponent} from '../pokemon-search-modal/pokemon-search-modal.component';
 import {MatDialog} from '@angular/material/dialog';
 import {StatCalculationService} from '../../services/stat-calculation/stat-calculation.service';
-
-export enum TeamDefinition {
-  PLAYER = 'player',
-  OPPONENT = 'opponent'
-}
+import {TeamTypeEnum} from '../../models/enums/TeamTypeEnum';
 
 export interface Team {
-  definition: TeamDefinition;
+  definition: TeamTypeEnum;
   team: Array<Pokemon>;
   dirtyEvent: EventEmitter<boolean>;
 
@@ -20,14 +16,14 @@ export interface Team {
 }
 
 export class AbstractTeam implements Team {
-  definition: TeamDefinition;
+  definition: TeamTypeEnum;
   team = new Array<Pokemon>();
   dirtyEvent = new EventEmitter<boolean>();
 
   activeNodeIndex?: number;
   activePokemon?: Pokemon;
 
-  constructor(public dialog: MatDialog, private statService: StatCalculationService, definition: TeamDefinition) {
+  constructor(public dialog: MatDialog, private statService: StatCalculationService, definition: TeamTypeEnum) {
     this.definition = definition;
   }
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {StatEnum} from '../../models/Stats';
 import {Pokemon} from '../../models/BasePokemon';
 import {NatureEnum} from '../../models/enums/NatureEnum';
+import {StatEnum} from '../../models/enums/StatEnum';
 
 @Injectable({
   providedIn: 'root'
