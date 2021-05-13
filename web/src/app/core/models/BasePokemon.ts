@@ -28,6 +28,7 @@ export class Pokemon extends BasePokemon {
 
   realStats: RealValues = new RealValues();
   selectedMoves: Array<Move> = new Array<Move>();
+  item: string;
 
   constructor(base: BasePokemon) {
     super(base.id, base.name, base.baseStats, base.typing.keyNamePairList, base.moves.keyNamePairList, base.abilities.keyNamePairList);
@@ -35,6 +36,7 @@ export class Pokemon extends BasePokemon {
     this.ivs = new IndividualValues();
     this.nature = NatureEnum.ADAMANT;
     this.level = 50;
+    this.item = '';
   }
 }
 

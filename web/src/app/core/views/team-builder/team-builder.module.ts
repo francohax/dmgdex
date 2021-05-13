@@ -12,6 +12,11 @@ import {EvConfigPanelComponent} from '../../components/config-panel/ev-config-pa
 import {IvConfigPanelComponent} from '../../components/config-panel/iv-config-panel/iv-config-panel.component';
 import {PlayerTeamComponent} from '../../components/teams/player-team/player-team.component';
 import {OpponentTeamComponent} from '../../components/teams/opponent-team/opponent-team.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -26,6 +31,11 @@ import {OpponentTeamComponent} from '../../components/teams/opponent-team/oppone
     CommonModule,
     MatButtonModule,
     MatSliderModule,
+    MatMenuModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
     FormsModule
   ]
 })

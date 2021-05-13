@@ -4,6 +4,7 @@ import {PokemonSearchModalComponent} from '../pokemon-search-modal/pokemon-searc
 import {MatDialog} from '@angular/material/dialog';
 import {StatCalculationService} from '../../services/stat-calculation/stat-calculation.service';
 import {TeamTypeEnum} from '../../models/enums/TeamTypeEnum';
+import {NatureService} from '../../services/nature/nature.service';
 
 export interface Team {
   definition: TeamTypeEnum;
@@ -23,7 +24,10 @@ export class AbstractTeam implements Team {
   activeNodeIndex?: number;
   activePokemon?: Pokemon;
 
-  constructor(public dialog: MatDialog, private statService: StatCalculationService, definition: TeamTypeEnum) {
+  constructor(public dialog: MatDialog,
+              protected statService: StatCalculationService,
+              public natureService: NatureService,
+              definition: TeamTypeEnum) {
     this.definition = definition;
   }
 

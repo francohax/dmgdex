@@ -1,3 +1,4 @@
+@use 'src/assets/styles/constants.sass' as c
 /* You can add global styles to this file, and also import other style files */
 body, html
     font-family: 'Ubuntu', sans-serif
@@ -32,18 +33,24 @@ body
   height: 100%
 
 .mat-slider.mat-slider-horizontal .mat-slider-track-fill
-  background-color: #81BDE0
+  background-color: c.$accent
 
 .mat-accent .mat-slider-thumb
   height: 20px
   width: 20px
-  background-color: #81BDE0 !important
-  border: solid 1px #2A1A39
+  background-color: c.$accent !important
+  border: solid 1px c.$deep-purple
   bottom: -12px
 
 .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb
-  background-color: #81BDE0
+  background-color: c.$deep-purple
 
 .mat-slider-horizontal
   height: 30px !important
   bottom: 11px !important
+
+.mat-select-value, .mat-select-arrow
+  color: c.$platinum
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple)
+  color: c.$deep-purple
+  background-color: c.$accent
