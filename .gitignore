@@ -2,3 +2,4 @@
 .idea/
 node_modules/
 utility-scripts/data.json
+web/package-lock.json
