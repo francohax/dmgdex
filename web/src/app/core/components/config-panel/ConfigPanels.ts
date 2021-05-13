@@ -1,6 +1,7 @@
 import {EventEmitter} from '@angular/core';
 import {Pokemon} from '../../models/BasePokemon';
-import {StatEnum, Stats} from '../../models/Stats';
+import {Stats} from '../../models/Stats';
+import {StatEnum} from '../../models/enums/StatEnum';
 
 export enum ConfigPanelDefinition {
   MOVE = 'Moves',

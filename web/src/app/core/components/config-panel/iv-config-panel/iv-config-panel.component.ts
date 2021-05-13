@@ -1,7 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {AbstractConfigPanel, ConfigPanelDefinition} from '../ConfigPanels';
 import {dummyBasePokemon, Pokemon} from '../../../models/BasePokemon';
-import {StatEnum, Stats} from '../../../models/Stats';
+import {Stats} from '../../../models/Stats';
+import {StatEnum} from '../../../models/enums/StatEnum';
 
 @Component({
   selector: 'app-iv-config-panel',

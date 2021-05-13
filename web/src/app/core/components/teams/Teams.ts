@@ -2,14 +2,11 @@ import {Pokemon} from '../../models/BasePokemon';
 import {EventEmitter} from '@angular/core';
 import {PokemonSearchModalComponent} from '../pokemon-search-modal/pokemon-search-modal.component';
 import {MatDialog} from '@angular/material/dialog';
-
-export enum TeamDefinition {
-  PLAYER = 'player',
-  OPPONENT = 'opponent'
-}
+import {StatCalculationService} from '../../services/stat-calculation/stat-calculation.service';
+import {TeamTypeEnum} from '../../models/enums/TeamTypeEnum';
 
 export interface Team {
-  definition: TeamDefinition;
+  definition: TeamTypeEnum;
   team: Array<Pokemon>;
   dirtyEvent: EventEmitter<boolean>;
 
@@ -19,14 +16,14 @@ export interface Team {
 }
 
 export class AbstractTeam implements Team {
-  definition: TeamDefinition;
+  definition: TeamTypeEnum;
   team = new Array<Pokemon>();
   dirtyEvent = new EventEmitter<boolean>();
 
   activeNodeIndex?: number;
   activePokemon?: Pokemon;
 
-  constructor(public dialog: MatDialog, definition: TeamDefinition) {
+  constructor(public dialog: MatDialog, private statService: StatCalculationService, definition: TeamTypeEnum) {
     this.definition = definition;
   }
 
@@ -46,7 +43,7 @@ export class AbstractTeam implements Team {
     const dialogRef = this.dialog.open(PokemonSearchModalComponent, { panelClass: 'custom-dialog-container' } );
 
     dialogRef.afterClosed().subscribe(response => {
-      const data: Pokemon = new Pokemon(response.data);
+      const data: Pokemon = this.statService.calculate(new Pokemon(response.data));
       const teamContains = this.team.some(p => p.id === data.id);
       if (!teamContains) {
         this.team?.push(data);

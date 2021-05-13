@@ -26,6 +26,7 @@
         <li class="stat-item flex" *ngFor="let value of activePokemon.baseStats.stats | keyvalue">
           <div>{{ value.key }}</div>
           <div>{{ value.value }}</div>
+          <div>{{ activePokemon.realStats.stats.get(value.key)}}</div>
         </li>
       </ul>
     </div>

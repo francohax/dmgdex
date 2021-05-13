@@ -1,11 +1,4 @@
-export enum StatEnum {
-  HP = 'HP',
-  ATK = 'Atk',
-  DEF = 'Def',
-  SP_ATK = 'SpA',
-  SP_DEF = 'SpD',
-  SPEED = 'Spe'
-}
+import {StatEnum} from './enums/StatEnum';
 
 export abstract class Stats {
   public stats = new Map<StatEnum, number>();
@@ -53,5 +46,11 @@ export class EffortValues extends Stats {
 export class IndividualValues extends Stats {
   constructor() {
     super(31, 31, 31, 31, 31, 31);
+  }
+}
+
+export class RealValues extends Stats {
+  constructor() {
+    super(0, 0, 0, 0, 0, 0);
   }
 }

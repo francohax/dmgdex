@@ -1,5 +1,6 @@
-import {BaseStats, dummyBaseStats, EffortValues, IndividualValues} from './Stats';
+import {BaseStats, dummyBaseStats, EffortValues, IndividualValues, RealValues} from './Stats';
 import {Move} from './Move';
+import {NatureEnum} from './enums/NatureEnum';
 
 export class BasePokemon {
   id: number;
@@ -22,12 +23,18 @@ export class BasePokemon {
 export class Pokemon extends BasePokemon {
   evs: EffortValues;
   ivs: IndividualValues;
+  nature: NatureEnum;
+  level: number;
+
+  realStats: RealValues = new RealValues();
   selectedMoves: Array<Move> = new Array<Move>();
 
   constructor(base: BasePokemon) {
     super(base.id, base.name, base.baseStats, base.typing.keyNamePairList, base.moves.keyNamePairList, base.abilities.keyNamePairList);
     this.evs = new EffortValues();
     this.ivs = new IndividualValues();
+    this.nature = NatureEnum.ADAMANT;
+    this.level = 50;
   }
 }
 
