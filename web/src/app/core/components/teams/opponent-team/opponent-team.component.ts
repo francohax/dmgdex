@@ -3,6 +3,7 @@ import {AbstractTeam} from '../Teams';
 import {MatDialog} from '@angular/material/dialog';
 import {StatCalculationService} from '../../../services/stat-calculation/stat-calculation.service';
 import {TeamTypeEnum} from '../../../models/enums/TeamTypeEnum';
+import {NatureService} from '../../../services/nature/nature.service';
 
 @Component({
   selector: 'app-opponent-team',
@@ -11,8 +12,8 @@ import {TeamTypeEnum} from '../../../models/enums/TeamTypeEnum';
 })
 export class OpponentTeamComponent extends AbstractTeam implements OnInit {
 
-  constructor(dialog: MatDialog, statService: StatCalculationService) {
-    super(dialog, statService, TeamTypeEnum.OPPONENT);
+  constructor(dialog: MatDialog, statService: StatCalculationService, natureService: NatureService) {
+    super(dialog, statService, natureService, TeamTypeEnum.OPPONENT);
   }
 
   ngOnInit(): void {
