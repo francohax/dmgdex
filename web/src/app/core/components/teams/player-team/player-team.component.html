@@ -36,12 +36,12 @@
     <div class="flex full-width options top-margin-1" style="justify-content: space-around">
       <mat-form-field style="width: 5ch">
         <mat-label class="option-label">Level</mat-label>
-        <label><input matInput placeholder="50" [(ngModel)]="activePokemon.level"></label>
+        <label><input matInput placeholder="50" [(ngModel)]="activePokemon.level" (change)="recalculateRealStat()"></label>
       </mat-form-field>
 
       <mat-form-field style="width: 9rem">
         <mat-label class="option-label">Nature</mat-label>
-        <mat-select [(ngModel)]="activePokemon.nature">
+        <mat-select [(ngModel)]="activePokemon.nature" (selectionChange)="recalculateRealStat()">
           <mat-option class="select-menu" *ngFor="let kv of natureService.natureDefinitions | keyvalue" [value]="kv.key" >
             <span>{{kv.key}} [+{{kv.value[0]}}, -{{kv.value[1]}}]</span>
           </mat-option>
@@ -61,6 +61,6 @@
   </div>
 
   <div class="line top-margin-1" *ngIf="activePokemon"></div>
-  <app-config-panel-container class="top-margin-1" [activePokemon]="activePokemon"></app-config-panel-container>
+  <app-config-panel-container class="top-margin-1" [activePokemon]="activePokemon" (updateEvent)="updateStats($event)"></app-config-panel-container>
 
 </div>
