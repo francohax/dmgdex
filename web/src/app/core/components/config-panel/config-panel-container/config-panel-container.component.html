@@ -5,7 +5,7 @@
   </div>
   <div class="config-panel secondary-panel flex-col">
     <app-move-config-panel *ngIf="activePanel === PanelTypes.MOVE"></app-move-config-panel>
-    <app-ev-config-panel  *ngIf="activePanel === PanelTypes.EVS" [activePokemon]="activePokemon"></app-ev-config-panel>
-    <app-iv-config-panel *ngIf="activePanel === PanelTypes.IVS" [activePokemon]="activePokemon"></app-iv-config-panel>
+    <app-ev-config-panel  *ngIf="activePanel === PanelTypes.EVS" [activePokemon]="activePokemon" (updateEvent)="updateTrigger($event)"></app-ev-config-panel>
+    <app-iv-config-panel *ngIf="activePanel === PanelTypes.IVS" [activePokemon]="activePokemon" (updateEvent)="updateTrigger($event)"></app-iv-config-panel>
   </div>
 </div>

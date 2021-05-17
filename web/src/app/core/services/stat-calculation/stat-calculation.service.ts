@@ -11,7 +11,6 @@ export class StatCalculationService {
   constructor(private natureService: NatureService) { }
 
   calculate(mon: Pokemon): Pokemon {
-    const level = 50;
     for (const [k, v] of mon.baseStats.stats) {
       const iv = mon.ivs.stats.get(k);
       if (typeof iv !== 'number') {
@@ -23,9 +22,10 @@ export class StatCalculationService {
         return mon;
       }
 
-      let result = Math.floor(0.01 * (2 * v + iv + Math.floor(0.25 * ev)) * level);
+      const level = mon.level;
+      let result: number = Math.floor(0.01 * (2 * v + iv + Math.floor(0.25 * ev)) * level);
       if (k === StatEnum.HP) {
-        result = result + level + 10;
+        result = Number(result) + Number(level) + 10;
       } else {
         result = (result + 5) * this.natureService.getNatureEffect(mon, k);
       }

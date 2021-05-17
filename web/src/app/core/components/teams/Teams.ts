@@ -56,4 +56,16 @@ export class AbstractTeam implements Team {
       this.activeNodeIndex = this.team.length - 1;
     });
   }
+
+  recalculateRealStat(): void {
+    if (!this.activePokemon) {
+      return;
+    }
+    this.activePokemon = this.statService.calculate(this.activePokemon);
+  }
+
+  updateStats(event: any): void {
+    this.activePokemon = event;
+    this.recalculateRealStat();
+  }
 }

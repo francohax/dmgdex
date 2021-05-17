@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ConfigPanel, ConfigPanelDefinition} from '../ConfigPanels';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {ConfigPanelDefinition} from '../ConfigPanels';
 import {Pokemon} from '../../../models/BasePokemon';
 
 @Component({
@@ -11,6 +11,8 @@ export class ConfigPanelContainerComponent implements OnInit {
 
   @Input()
   activePokemon?: Pokemon;
+  @Output()
+  updateEvent = new EventEmitter<Pokemon>();
 
   menuItems = [ConfigPanelDefinition.MOVE, ConfigPanelDefinition.EVS, ConfigPanelDefinition.IVS];
   PanelTypes = ConfigPanelDefinition;
@@ -30,5 +32,9 @@ export class ConfigPanelContainerComponent implements OnInit {
 
   updateDisplayPanel(def: ConfigPanelDefinition): void {
     this.activePanel = def;
+  }
+
+  updateTrigger(event: any): void {
+    this.updateEvent.emit(event);
   }
 }
